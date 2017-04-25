@@ -1,0 +1,1 @@
+fos.Router.setData({"base_url":"","routes":{"ajax_flash_subscribe":{"tokens":[["text","\/ajax\/flash_subscription"]],"defaults":[],"requirements":[],"hosttokens":[]}},"prefix":"","host":"www6.inra.fr","scheme":"http"});
