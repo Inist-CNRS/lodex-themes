@@ -2,26 +2,26 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="keywords" content="lodex, semantic web, bootstrap">
+        <meta name="keywords" content="lodex, semantic web">
         <meta name="description" content="lodex">
         <link rel="shortcut icon" type="image/png" href="favicon.png"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/style.css">
 
         <script type="text/javascript" src="//content-delivery.istex.fr/web-header/main.js"></script>
 
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat&subset=latin,latin-ext" type="text/css">
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat&amp;subset=latin,latin-ext" type="text/css">
 
         <title>Lodex</title>
 
         <style>
           .text-center { text-align: left; }
           h3, .h3, .property_value { font-size: 1.17em; font-family: Montserrat; }
-          th { background-color: rgba(197, 216, 50, 0.23); }
+          th { background-color: rgba(197, 216, 50, 1); }
         </style>
     </head>
     <body>
@@ -33,153 +33,115 @@
                 <div class="container">
                     <nav class="navbar row">
                         <div class="navbar-header">
-                            <a class="navbar-brand" href="/home"><span class="et-icon-gears icon-sm icon-white zoomIn animated"></span> Lodex</a>
+                            <a class="navbar-brand" href="https://data.istex.fr"><span class="et-icon-gears icon-sm icon-white zoomIn animated"></span> data.istex.fr</a>
                             <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse"
                                     data-target=".navbar-1">
                                 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
-                                                                                                                  class="icon-bar"></span><span class="icon-bar"></span>
+                                      class="icon-bar"></span><span class="icon-bar"></span>
                             </button>
                         </div>
                         <div class="collapse navbar-collapse navbar-1">
                             <ul class="site-navigation nav navbar-nav">
-                                <li><a class="btn-admin" href="/admin" title="Administration" alt="Administration">Administration</a></li>
-                                <li><a href="https://github.com/Inist-CNRS/lodex" title="Gitub Lodex" alt="Github lodex" target="_blank">Github</a></li>
-                                <li><a href="http://lodex.inist.fr/" title="blog LODEX" alt="blog LODEX" target="_blank">About</a></li>
+                                <li><a href="/home">Accueil</a></li>
+                                <li><a class="btn-admin" href="/admin" title="Administration">Administration</a></li>
+                                <li><a href="https://github.com/Inist-CNRS/lodex" title="GitHub Lodex" target="_blank">GitHub</a></li>
+                                <li><a href="http://lodex.inist.fr/" title="blog LODEX" target="_blank">À propos</a></li>
                             </ul>
                         </div>
                     </nav>
+            	</div>
+           </div>
+           <!-- Navigation Bloc END -->
+
+            <!-- lodex -->
+            <div class="bloc l-bloc bgc-white" id="lodex">
+                <div class="container bloc-lg">
+                    <div id="root"> </div>
+                </div>
             </div>
-        </div>
-        <!-- Navigation Bloc END -->
 
-
-
-        <!-- services -->
-        <div class="bloc l-bloc bgc-white" id="services">
-            <div class="container bloc-lg">
-                <div class="row">
-                    <div class="col-sm-12">
-
-                        <h3 class="text-center mg-md ">
-                            <div id="root"></div>
-                        </h3>
-
-
-                    </div>
-
+            <!-- porfolio END -->
+            <div class="bloc bgc-carmine-pink d-bloc">
+                <div class="container bloc-md">
 
                 </div>
             </div>
-        </div>
-        <!-- services END -->
-        <!-- lodex -->
-        <div class="bloc l-bloc bgc-white" id="lodex">
-            <div class="container bloc-lg">
-                <div id="root"> </div>
-            </div>
+            <!-- services -->
+            <div class="bloc l-bloc bgc-white">
+                <div class="container bloc-lg">
+                    <div class="row">
+                        <div class="col-sm-4">
+
+                            <div id="twitter_feed_widget-2" class="widget widget_twitter_feed_widget">
+                                <a class="twitter-timeline" href="https://twitter.com/Projet_ISTEX"
+                                   data-tweet-limit="1"
+                                   data-chrome="noheader nofooter noborders transparent noscrollbar"
+                                > Tweets de @Projet_ISTEX</a>
+                                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div></div>
 
 
-        </div>
+                        <div class="col-sm-4">
+                            <div class="text-center">
+                                <span class="et-icon-gears icon-xl icon-carmine-pink animated zoomIn"></span>
+                            </div>
+                            <h3 class="text-center mg-md ">
+                                Lodex en quelques mots
+                            </h3>
 
-        <!-- porfolio END -->
-        <div class="bloc bgc-carmine-pink d-bloc" id="quote">
-            <div class="container bloc-md">
-
-            </div>
-        </div>
-        <!-- services -->
-        <div class="bloc l-bloc bgc-white" id="services">
-            <div class="container bloc-lg">
-                <div class="row">
-                    <div class="col-sm-4">
-
-                        <div id="twitter_feed_widget-2" class="widget widget_twitter_feed_widget">
-                            <a class="twitter-timeline" href="https://twitter.com/Projet_ISTEX"
-                               data-tweet-limit="1"
-                               data-chrome="noheader nofooter noborders transparent noscrollbar"
-                               > Tweets de @Projet_ISTEX</a>
-                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div></div>
-
-
-                    <div class="col-sm-4">
-                        <div class="text-center">
-                            <span class="et-icon-gears icon-xl icon-carmine-pink animated zoomIn"></span>
+                            <p class="text-center">
+                                LODEX a pour ambition d'extraire ou de collecter dans chaque document présent dans le fonds ISTEX un même type d'information pour créer des jeux de données représentatifs, normalisés et interopérables en respectant au maximum les normes du web sémantique.
+                            </p>
                         </div>
-                        <h3 class="text-center mg-md ">
-                            Lodex en quelques mots
-                        </h3>
-
-                        <p class="text-center">
-                          LODEX a pour ambition d'extraire ou de collecter dans chaque document présent dans le fonds ISTEX un même type d'information pour créer des jeux de données représentatifs, normalisés et interopérables en respectant au maximum les normes du web sémantique.
-                        </p>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="text-center">
-                            <a href="http://www.cnrs.fr/" title="CNRS" target="_blank"><img src="/img/cnrs.jpg" alt="CNRS" title="Le site du CNRS"></a></div>
-
-
+                        <div class="col-sm-4">
+                            <div class="text-center">
+                                <a href="http://www.cnrs.fr/" title="CNRS" target="_blank"><img src="/img/cnrs130.png" alt="CNRS" title="Le site du CNRS"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- services END -->
+            <!-- services END -->
 
 
+            <!-- Footer - quote -->
+            <div class="bloc bgc-carmine-pink d-bloc">
+                <div class="container bloc-md">
 
-
-
-
-        <!-- Footer - quote -->
-        <div class="bloc bgc-carmine-pink d-bloc" id="quote">
-            <div class="container bloc-md">
-
+                </div>
             </div>
-        </div>
-        <!-- Footer - quote END -->
+            <!-- Footer - quote END -->
 
 
+            <!-- Footer - bloc-8 -->
+            <div class="bloc bgc-platinum l-bloc" id="bloc-8">
+                <div class="container bloc-sm">
+                    <div class="row">
 
-        <!-- ScrollToTop Button -->
-        <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span
-                                                                                         class="fa fa-chevron-up"></span></a>
-        <!-- ScrollToTop Button END-->
-
-        <!-- Footer - bloc-8 -->
-        <div class="bloc bgc-platinum l-bloc" id="bloc-8">
-            <div class="container bloc-sm">
-                <div class="row">
-
-                    <div class="col-xs-12 col-md-8 col-md-offset-2">
-                         <div class="col-sm-3 text-center">
-                            <h4 class="social-lg">Liens LODEX</h4>
+                        <div class="col-xs-12 col-md-8 col-md-offset-2">
+                            <div class="col-sm-3 text-center">
+                                <h4 class="social-lg">Liens LODEX</h4>
+                            </div>
+                            <div class="col-sm-3 text-center">
+                                <a class="social-lg" href="https://twitter.com/lodex_team" target="_blank"><span
+                                   class="fa fa-twitter icon-md icon-carmine-pink" title="Twitter de lodex"></span></a>
+                            </div>
+                            <div class="col-sm-3 text-center">
+                                <a class="social-lg" href="https://github.com/Inist-CNRS/lodex" target="_blank"><span class="fa fa-github icon-md icon-carmine-pink" title="GitHub de lodex"></span></a>
+                            </div>
+                            <div class="col-sm-3 text-center">
+                                <a class="social-lg"
+                                   href="http://lodex.inist.fr"
+                                   target="_blank"><span class="fa fa-wordpress icon-md icon-carmine-pink" title="blog de lodex"></span></a>
+                            </div>
                         </div>
-                        <div class="col-sm-3 text-center">
-                            <a class="social-lg" href="https://twitter.com/lodex_team" target="_blank"><span
-                                                                                                             class="fa fa-twitter icon-md icon-carmine-pink" alt="twitter lodex" title="twitter de lodex"></span></a>
-                        </div>
-                        <div class="col-sm-3 text-center">
-                            <a class="social-lg" href="https://github.com/Inist-CNRS/lodex" target="_blank"><span class="fa fa-github icon-md icon-carmine-pink" alt="Github lodex" title="Github de lodex"></span></a>
-                        </div>
-                        <div class="col-sm-3 text-center">
-                            <a class="social-lg"
-                               href="http://lodex.inist.fr"
-                               target="_blank"><span class="fa fa-wordpress icon-md icon-carmine-pink" alt="blog de lodex" title="blog de lodex"></span></a>
-                        </div>
-
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-md-8 col-md-offset-2 text-center mg-md">Created by INIST-CNRS</div>
-        </div>
-        <!-- Footer - bloc-8 END -->
+            <div class="row">
+                <div class="col-xs-12 col-md-8 col-md-offset-2 text-center mg-md">Créé par l'INIST-CNRS</div>
+            </div>
+            <!-- Footer - bloc-8 END -->
         </div>
     <!-- Main container END -->
     </body>
-
-<!-- Google Analytics -->
-
-<!-- Google Analytics END -->
-
 </html>
