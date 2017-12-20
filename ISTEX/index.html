@@ -2,8 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="keywords" content="lodex, semantic web">
-        <meta name="description" content="lodex">
+        <meta name="keywords" content="istex, semantic web, linked data">
+        <meta name="description" content="Site on semantic web approch to ISTEX data">
         <link rel="shortcut icon" type="image/png" href="favicon.png"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
 
@@ -12,16 +12,20 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/style.css">
 
-        <script type="text/javascript" src="//content-delivery.istex.fr/web-header/main.js"></script>
+        <!-- <script src="//content-delivery.istex.fr/web-header/main.js"></script> -->
 
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat&amp;subset=latin,latin-ext" type="text/css">
 
-        <title>Lodex</title>
+        <title>data.istex.fr : Linked Data from ISTEX</title>
 
         <style>
           .text-center { text-align: left; }
-          h3, .h3, .property_value { font-size: 1.17em; font-family: Montserrat; }
+          h3, .h3, .property_value { font-size: 1.17em; font-family: Roboto, sans-serif; }
           th { background-color: rgba(197, 216, 50, 1); }
+          .h3-services{
+              font-weight: 400;
+              font-family: Montserrat;
+          }
         </style>
     </head>
     <body>
@@ -33,7 +37,7 @@
                 <div class="container">
                     <nav class="navbar row">
                         <div class="navbar-header">
-                            <a class="navbar-brand" href="https://data.istex.fr"><span class="et-icon-gears icon-sm icon-white zoomIn animated"></span> data.istex.fr</a>
+                            <a class="navbar-brand" href="."><span class="et-icon-gears icon-sm icon-white zoomIn animated"></span> data.istex.fr</a>
                             <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse"
                                     data-target=".navbar-1">
                                 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
@@ -42,10 +46,11 @@
                         </div>
                         <div class="collapse navbar-collapse navbar-1">
                             <ul class="site-navigation nav navbar-nav">
-                                <li><a href="/home">Accueil</a></li>
-                                <li><a class="btn-admin" href="/admin" title="Administration">Administration</a></li>
-                                <li><a href="https://github.com/Inist-CNRS/lodex" title="GitHub Lodex" target="_blank">GitHub</a></li>
-                                <li><a href="http://lodex.inist.fr/" title="blog LODEX" target="_blank">À propos</a></li>
+                                <li><a href="https://data-set.data.istex.fr/">Les données</a></li>
+                                <li><a href="yasgui.html" title="Formulaire SPARQL">Formulaire SPARQL</a></li>
+                                <li><a href="https://data.istex.fr/sparql" title="SPARQL">SPARQL Endpoint</a></li>
+                                <li><a href="https://data.istex.fr/ontology/istex" title="Ontologie ISTEX">Ontologie</a></li>
+                                <li><a href="http://lodex.inist.fr/" title="blog LODEX" target="blog">Blog</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -53,10 +58,10 @@
            </div>
            <!-- Navigation Bloc END -->
 
-            <!-- lodex -->
+            <!-- services -->
             <div class="bloc l-bloc bgc-white" id="lodex">
                 <div class="container bloc-lg">
-                    <div id="root"> </div>
+                    <div id="root"></div>
                 </div>
             </div>
 
@@ -84,12 +89,12 @@
                             <div class="text-center">
                                 <span class="et-icon-gears icon-xl icon-carmine-pink animated zoomIn"></span>
                             </div>
-                            <h3 class="text-center mg-md ">
-                                Lodex en quelques mots
+                            <h3 class="text-center mg-md h3-services">
+                                data.istex.fr en quelques mots
                             </h3>
 
                             <p class="text-center">
-                                LODEX a pour ambition d'extraire ou de collecter dans chaque document présent dans le fonds ISTEX un même type d'information pour créer des jeux de données représentatifs, normalisés et interopérables en respectant au maximum les normes du web sémantique.
+                                data.istex.fr expose le Triple Store des données <a href="//www.istex.fr">ISTEX</a> via son <a href="//data.istex.fr/sparql">SPARQL Endpoint</a>.
                             </p>
                         </div>
                         <div class="col-sm-4">
@@ -104,7 +109,7 @@
 
 
             <!-- Footer - quote -->
-            <div class="bloc bgc-carmine-pink d-bloc">
+            <div class="bloc bgc-carmine-pink d-bloc" id="quote">
                 <div class="container bloc-md">
 
                 </div>
@@ -119,19 +124,19 @@
 
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <div class="col-sm-3 text-center">
-                                <h4 class="social-lg">Liens LODEX</h4>
-                            </div>
-                            <div class="col-sm-3 text-center">
                                 <a class="social-lg" href="https://twitter.com/lodex_team" target="_blank"><span
-                                   class="fa fa-twitter icon-md icon-carmine-pink" title="Twitter de lodex"></span></a>
+                                   class="fa fa-twitter icon-md icon-carmine-pink" title="Twitter de Lodex"></span></a>
                             </div>
                             <div class="col-sm-3 text-center">
-                                <a class="social-lg" href="https://github.com/Inist-CNRS/lodex" target="_blank"><span class="fa fa-github icon-md icon-carmine-pink" title="GitHub de lodex"></span></a>
+                                <a class="social-lg" href="https://github.com/Inist-CNRS/lodex" target="_blank"><span class="fa fa-github icon-md icon-carmine-pink" title="GitHub de Lodex"></span></a>
                             </div>
                             <div class="col-sm-3 text-center">
                                 <a class="social-lg"
                                    href="http://lodex.inist.fr"
-                                   target="_blank"><span class="fa fa-wordpress icon-md icon-carmine-pink" title="blog de lodex"></span></a>
+                                   target="_blank"><span class="fa fa-wordpress icon-md icon-carmine-pink" title="Blog de Lodex"></span></a>
+                            </div>
+                            <div class="col-sm-3 text-center">
+                                <a class="btn-admin" href="/admin" title="Administration">Administration</a>
                             </div>
                         </div>
                     </div>
@@ -143,23 +148,22 @@
             <!-- Footer - bloc-8 END -->
         </div>
     <!-- Main container END -->
-    </body>
  <!-- Piwik -->
-<script type="text/javascript">
+<script>
   var _paq = _paq || [];
-  _paq.push([function() { 
-                var self = this; 
-                function getOriginalVisitorCookieTimeout() { 
-                var now = new Date(), 
-                nowTs = Math.round(now.getTime() / 1000), 
-                visitorInfo = self.getVisitorInfo(); 
-                var createTs = parseInt(visitorInfo[2]); 
-                var cookieTimeout = 33696000;  
-                var originalTimeout = createTs + cookieTimeout - nowTs; 
-                return originalTimeout; 
+  _paq.push([function() {
+                var self = this;
+                function getOriginalVisitorCookieTimeout() {
+                var now = new Date(),
+                nowTs = Math.round(now.getTime() / 1000),
+                visitorInfo = self.getVisitorInfo();
+                var createTs = parseInt(visitorInfo[2]);
+                var cookieTimeout = 33696000;
+                var originalTimeout = createTs + cookieTimeout - nowTs;
+                return originalTimeout;
                 }
-                this.setVisitorCookieTimeout( getOriginalVisitorCookieTimeout() ); 
-                }]); 
+                this.setVisitorCookieTimeout( getOriginalVisitorCookieTimeout() );
+                }]);
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {
@@ -167,14 +171,13 @@
     _paq.push(['setTrackerUrl', u+'piwik.php']);
     _paq.push(['setSiteId', '39']);
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; 
-                g.async=true; 
-                g.defer=true; 
-                g.src=u+'piwik.js'; 
+    g.type='text/javascript';
+                g.async=true;
+                g.defer=true;
+                g.src=u+'piwik.js';
                 s.parentNode.insertBefore(g,s);
   })();
 </script>
 <!-- End Piwik Code -->
-
-
+    </body>
 </html>
