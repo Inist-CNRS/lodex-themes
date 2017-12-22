@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <nav><a href="..">data.istex.fr</a></nav>
+    <nav><a href="http://data.istex.fr/">data.istex.fr</a></nav>
     <section class="cover">
       <div class="inside">
         <div class="description">
@@ -31,7 +31,7 @@
         <li><a href="#prov"><span>PROV</span></a></li>
         <li><a href="#schema"><span>SCHEMA</span></a></li>
         <li><a href="#foaf"><span>FOAF</span></a></li>
-        <li><a href="#lomfr"><span>LOM-fr</span></a></li>
+        <li><a href="#lom"><span>IEEE-Lom</span></a></li>
         <li><a href="#geonames"><span>GEONAMES</span></a></li>
       </ul>
       <h2>Classes</h2>
@@ -47,6 +47,7 @@
         <li><a href="#PublisherConcept"><span>PublisherConcept</span></a></li>
         <li><a href="#ScienceMetrixConcept"><span>ScienceMetrixConcept</span></a></li>
         <li><a href="#WosConcept"><span>WosConcept</span></a></li>
+        <li><a href="#ScopusConcept"><span>ScopusConcept</span></a></li>
       </ul>
       <h2>Object Properties</h2>
       <ul>
@@ -60,6 +61,7 @@
         <li><a href="#subjectInist"><span>subjectInist</span></a></li>
         <li><a href="#subjectScienceMetrix"><span>subjectScienceMetrix</span></a></li>
         <li><a href="#subjectWos"><span>subjectWos</span></a></li>
+        <li><a href="#subjectScopus"><span>subjectScopus</span></a></li>
       </ul>
       <h2>Data Properties</h2>
       <ul>
@@ -110,7 +112,7 @@
           <div><span>décrit des personnes et les relations qu'elles entretiennent entre elles</span></div>
         </li>
         <li>
-          <h2 id="lomfr"><a href="http://www.lom-fr.fr/ontologies/lomfr-1/">LOM-fr</a><small><i><a href="http://www.lom-fr.fr/ontologies/lomfr-1/">http://www.lom-fr.fr/ontologies/lomfr-1/</a></i></small></h2>
+          <h2 id="lom"><a href="http://data.opendiscoveryspace.eu/lom_ontology_ods.owl">IEEE-Lom</a><small><i><a href="http://data.opendiscoveryspace.eu/lom_ontology_ods.owl">http://data.opendiscoveryspace.eu/lom_ontology_ods.owl</a></i></small></h2>
           <div><span>décrit des ressources pédagogiques</span></div>
         </li>
         <li>
@@ -308,6 +310,23 @@
             <li>
               <div class="prop"><small>rdfs:label</small></div>
               <div class="obj"><span>istex:WosConcept</span><small>@en</small></div>
+            </li>
+            <li>
+              <div class="prop"><small>rdfs:subClassOf</small></div>
+              <div class="obj"><span><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></span></div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2 id="ScopusConcept"><span>ScopusConcept</span><a href="#ScopusConcept"><small>https://data.istex.fr/ontology/istex#ScopusConcept</small></a></h2>
+          <ul class="features">
+            <li>
+              <div class="prop"><small>rdfs:comment</small></div>
+              <div class="obj"><span>Décrit la structure conceptuelle des catégories Scopus<small>@fr</small></span></div>
+            </li>
+            <li>
+              <div class="prop"><small>rdfs:label</small></div>
+              <div class="obj"><span>istex:ScopusConcept</span><small>@en</small></div>
             </li>
             <li>
               <div class="prop"><small>rdfs:subClassOf</small></div>
@@ -530,17 +549,12 @@
             </li>
           </ul>
         </li>
-      </ul>
-    </section>
-    <h1>Data Properties</h1>
-    <section class="properties card">
-      <ul class="list">
         <li>
-          <h2 id="accessURL"><span>accessURL</span><a href="#accessURL"><small>https://data.istex.fr/ontology/istex#accessURL</small></a></h2>
+          <h2 id="subjectScopus"><span>subjectScopus</span><a href="#subjectScopus"><small>https://data.istex.fr/ontology/istex#subjectScopus</small></a></h2>
           <ul class="features">
             <li>
               <div class="prop"><small>rdfs:comment</small></div>
-              <div class="obj"><span>Lien direct vers le document en format PDF<small>@fr</small></span></div>
+              <div class="obj"><span>Indique la ou les catégorie(s) Scopus du document<small>@fr</small></span></div>
             </li>
             <li>
               <div class="prop"><small>rdfs:domain</small></div>
@@ -548,178 +562,203 @@
             </li>
             <li>
               <div class="prop"><small>rdfs:label</small></div>
-              <div class="obj"><span>istex:accessURL</span><small>@en</small></div>
+              <div class="obj"><span>istex:subjectScopus</span><small>@en</small></div>
             </li>
             <li>
               <div class="prop"><small>rdfs:range</small></div>
-              <div class="obj"><span><a href="http://www.w3.org/2001/XMLSchema#anyURI">xsd:anyURI</a></span></div>
+              <div class="obj"><span><a href="https://data.istex.fr/ontology/istex#ScopusConcept">istex:ScopusConcept</a></span></div>
             </li>
           </ul>
         </li>
-        <li>
-          <h2 id="affiliation"><span>affiliation</span><a href="#affiliation"><small>https://data.istex.fr/ontology/istex#affiliation</small></a></h2>
-          <ul class="features">
-            <li>
-              <div class="prop"><small>rdfs:comment</small></div>
-              <div class="obj"><span>Décrit l'affiliation d'un auteur ou d'un organisme.<small>@fr</small></span></div>
-            </li>
-            <li>
-              <div class="prop"><small>rdfs:domain</small></div>
-              <div class="obj"><span><a href="http://xmlns.com/foaf/0.1/Agent"></a></span></div>
-            </li>
-            <li>
-              <div class="prop"><small>rdfs:label</small></div>
-              <div class="obj"><span>istex:affiliation</span><small>@en</small></div>
-            </li>
-            <li>
-              <div class="prop"><small>rdfs:range</small></div>
-              <div class="obj"><span><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span></div>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h2 id="constraint"><span>constraint</span><a href="#constraint"><small>https://data.istex.fr/ontology/istex#constraint</small></a></h2>
-          <ul class="features">
-            <li>
-              <div class="prop"><small>rdfs:comment</small></div>
-              <div class="obj"><span>Les contraintes d'utilisation du processus d'enrichissement<small>@fr</small></span></div>
-            </li>
-            <li>
-              <div class="prop"><small>rdfs:domain</small></div>
-              <div class="obj"><span><a href="https://data.istex.fr/ontology/istex#EnrichmentProcessConcept">istex:EnrichmentProcessConcept</a></span></div>
-            </li>
-            <li>
-              <div class="prop"><small>rdfs:label</small></div>
-              <div class="obj"><span>istex:constraint</span><small>@en</small></div>
-            </li>
-            <li>
-              <div class="prop"><small>rdfs:range</small></div>
-              <div class="obj"><span><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span></div>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h2 id="enrichmentType"><span>enrichmentType</span><a href="#enrichmentType"><small>https://data.istex.fr/ontology/istex#enrichmentType</small></a></h2>
-          <ul class="features">
-            <li>
-              <div class="prop"><small>rdfs:comment</small></div>
-              <div class="obj"><span>Indique le type d'enrichissement créé.<small>@fr</small></span></div>
-            </li>
-            <li>
-              <div class="prop"><small>rdfs:domain</small></div>
-              <div class="obj"><span><a href="https://data.istex.fr/ontology/istex#EnrichmentProcessConcept">istex:EnrichmentProcessConcept</a></span></div>
-            </li>
-            <li>
-              <div class="prop"><small>rdfs:label</small></div>
-              <div class="obj"><span>istex:enrichmentType</span><small>@en</small></div>
-            </li>
-            <li>
-              <div class="prop"><small>rdfs:range</small></div>
-              <div class="obj"><span><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span></div>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h2 id="idIstex"><span>idIstex</span><a href="#idIstex"><small>https://data.istex.fr/ontology/istex#idIstex</small></a></h2>
-          <ul class="features">
-            <li>
-              <div class="prop"><small>rdfs:comment</small></div>
-              <div class="obj"><span>Identifiant Istex de l'objet documentaire.<small>@fr</small></span></div>
-            </li>
-            <li>
-              <div class="prop"><small>rdfs:domain</small></div>
-              <div class="obj"><span><a href="http://purl.org/ontology/bibo/Document">bibo:Document</a></span></div>
-            </li>
-            <li>
-              <div class="prop"><small>rdfs:label</small></div>
-              <div class="obj"><span>istex:idIstex</span><small>@en</small></div>
-            </li>
-            <li>
-              <div class="prop"><small>rdfs:range</small></div>
-              <div class="obj"><span><a href="http://www.w3.org/2001/XMLSchema#anyURI">xsd:anyURI</a></span></div>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h2 id="quantityOfItems"><span>quantityOfItems</span><a href="#quantityOfItems"><small>https://data.istex.fr/ontology/istex#quantityOfItems</small></a></h2>
-          <ul class="features">
-            <li>
-              <div class="prop"><small>rdfs:comment</small></div>
-              <div class="obj"><span>Indique le nombre de titres bibliographiques par corpus ISTEX<small>@fr</small></span></div>
-            </li>
-            <li>
-              <div class="prop"><small>rdfs:domain</small></div>
-              <div class="obj"><span><a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a></span></div>
-            </li>
-            <li>
-              <div class="prop"><small>rdfs:label</small></div>
-              <div class="obj"><span>istex:quantityOfItems</span><small>@en</small></div>
-            </li>
-            <li>
-              <div class="prop"><small>rdfs:range</small></div>
-              <div class="obj"><span><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span></div>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h2 id="query"><span>query</span><a href="#query"><small>https://data.istex.fr/ontology/istex#query</small></a></h2>
-          <ul class="features">
-            <li>
-              <div class="prop"><small>rdfs:comment</small></div>
-              <div class="obj"><span>Indique la requête (API) à réaliser pour accéder aux documents indexés par le concept
-                  décrit. Cette API permet de récupérer les documents et le nombre de documents. Préfixer
-                  la requête avec "https://api.istex.fr/document/?q=" pour activer l'API.<small>@fr</small></span></div>
-            </li>
-            <li>
-              <div class="prop"><small>rdfs:label</small></div>
-              <div class="obj"><span>istex:query</span></div>
-            </li>
-            <li>
-              <div class="prop"><small>rdfs:range</small></div>
-              <div class="obj"><span><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span></div>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h2 id="subjectLabel"><span>subjectLabel</span><a href="#subjectLabel"><small>https://data.istex.fr/ontology/istex#subjectLabel</small></a></h2>
-          <ul class="features">
-            <li>
-              <div class="prop"><small>rdfs:comment</small></div>
-              <div class="obj"><span>Indique la ou les catégorie(s) du document<small>@fr</small></span></div>
-            </li>
-            <li>
-              <div class="prop"><small>rdfs:domain</small></div>
-              <div class="obj"><span><a href="http://purl.org/ontology/bibo/Document">bibo:Document</a></span></div>
-            </li>
-            <li>
-              <div class="prop"><small>rdfs:label</small></div>
-              <div class="obj"><span>istex:subjectLabel</span><small>@en</small></div>
-            </li>
-            <li>
-              <div class="prop"><small>rdfs:range</small></div>
-              <div class="obj"><span><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span></div>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h2 id="identityProvider"><span>identityProvider</span><a href="#identityProvider"><small>https://data.istex.fr/ontology/istex#identityProvider</small></a></h2>
-          <ul class="features">
-            <li>
-              <div class="prop"><small>rdfs:comment</small></div>
-              <div class="obj"><span>Indique le nom du fournisseur d'identité pour le jeu organization-list<small>@fr</small></span></div>
-            </li>
-            <li>
-              <div class="prop"><small>rdfs:label</small></div>
-              <div class="obj"><span>istex:identityProvider</span><small>@en</small></div>
-            </li>
-            <li>
-              <div class="prop"><small>rdfs:range</small></div>
-              <div class="obj"><span><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span></div>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-  </body>
-</html>
+      </section>
+      <h1>Data Properties</h1>
+      <section class="properties card">
+        <ul class="list">
+          <li>
+            <h2 id="accessURL"><span>accessURL</span><a href="#accessURL"><small>https://data.istex.fr/ontology/istex#accessURL</small></a></h2>
+            <ul class="features">
+              <li>
+                <div class="prop"><small>rdfs:comment</small></div>
+                <div class="obj"><span>Lien direct vers le document en format PDF<small>@fr</small></span></div>
+              </li>
+              <li>
+                <div class="prop"><small>rdfs:domain</small></div>
+                <div class="obj"><span><a href="http://purl.org/ontology/bibo/Document">bibo:Document</a></span></div>
+              </li>
+              <li>
+                <div class="prop"><small>rdfs:label</small></div>
+                <div class="obj"><span>istex:accessURL</span><small>@en</small></div>
+              </li>
+              <li>
+                <div class="prop"><small>rdfs:range</small></div>
+                <div class="obj"><span><a href="http://www.w3.org/2001/XMLSchema#anyURI">xsd:anyURI</a></span></div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2 id="affiliation"><span>affiliation</span><a href="#affiliation"><small>https://data.istex.fr/ontology/istex#affiliation</small></a></h2>
+            <ul class="features">
+              <li>
+                <div class="prop"><small>rdfs:comment</small></div>
+                <div class="obj"><span>Décrit l'affiliation d'un auteur ou d'un organisme.<small>@fr</small></span></div>
+              </li>
+              <li>
+                <div class="prop"><small>rdfs:domain</small></div>
+                <div class="obj"><span><a href="http://xmlns.com/foaf/0.1/Agent"></a></span></div>
+              </li>
+              <li>
+                <div class="prop"><small>rdfs:label</small></div>
+                <div class="obj"><span>istex:affiliation</span><small>@en</small></div>
+              </li>
+              <li>
+                <div class="prop"><small>rdfs:range</small></div>
+                <div class="obj"><span><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span></div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2 id="constraint"><span>constraint</span><a href="#constraint"><small>https://data.istex.fr/ontology/istex#constraint</small></a></h2>
+            <ul class="features">
+              <li>
+                <div class="prop"><small>rdfs:comment</small></div>
+                <div class="obj"><span>Les contraintes d'utilisation du processus d'enrichissement<small>@fr</small></span></div>
+              </li>
+              <li>
+                <div class="prop"><small>rdfs:domain</small></div>
+                <div class="obj"><span><a href="https://data.istex.fr/ontology/istex#EnrichmentProcessConcept">istex:EnrichmentProcessConcept</a></span></div>
+              </li>
+              <li>
+                <div class="prop"><small>rdfs:label</small></div>
+                <div class="obj"><span>istex:constraint</span><small>@en</small></div>
+              </li>
+              <li>
+                <div class="prop"><small>rdfs:range</small></div>
+                <div class="obj"><span><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span></div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2 id="enrichmentType"><span>enrichmentType</span><a href="#enrichmentType"><small>https://data.istex.fr/ontology/istex#enrichmentType</small></a></h2>
+            <ul class="features">
+              <li>
+                <div class="prop"><small>rdfs:comment</small></div>
+                <div class="obj"><span>Indique le type d'enrichissement créé.<small>@fr</small></span></div>
+              </li>
+              <li>
+                <div class="prop"><small>rdfs:domain</small></div>
+                <div class="obj"><span><a href="https://data.istex.fr/ontology/istex#EnrichmentProcessConcept">istex:EnrichmentProcessConcept</a></span></div>
+              </li>
+              <li>
+                <div class="prop"><small>rdfs:label</small></div>
+                <div class="obj"><span>istex:enrichmentType</span><small>@en</small></div>
+              </li>
+              <li>
+                <div class="prop"><small>rdfs:range</small></div>
+                <div class="obj"><span><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span></div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2 id="idIstex"><span>idIstex</span><a href="#idIstex"><small>https://data.istex.fr/ontology/istex#idIstex</small></a></h2>
+            <ul class="features">
+              <li>
+                <div class="prop"><small>rdfs:comment</small></div>
+                <div class="obj"><span>Identifiant Istex de l'objet documentaire.<small>@fr</small></span></div>
+              </li>
+              <li>
+                <div class="prop"><small>rdfs:domain</small></div>
+                <div class="obj"><span><a href="http://purl.org/ontology/bibo/Document">bibo:Document</a></span></div>
+              </li>
+              <li>
+                <div class="prop"><small>rdfs:label</small></div>
+                <div class="obj"><span>istex:idIstex</span><small>@en</small></div>
+              </li>
+              <li>
+                <div class="prop"><small>rdfs:range</small></div>
+                <div class="obj"><span><a href="http://www.w3.org/2001/XMLSchema#anyURI">xsd:anyURI</a></span></div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2 id="quantityOfItems"><span>quantityOfItems</span><a href="#quantityOfItems"><small>https://data.istex.fr/ontology/istex#quantityOfItems</small></a></h2>
+            <ul class="features">
+              <li>
+                <div class="prop"><small>rdfs:comment</small></div>
+                <div class="obj"><span>Indique le nombre de titres bibliographiques par corpus ISTEX<small>@fr</small></span></div>
+              </li>
+              <li>
+                <div class="prop"><small>rdfs:domain</small></div>
+                <div class="obj"><span><a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a></span></div>
+              </li>
+              <li>
+                <div class="prop"><small>rdfs:label</small></div>
+                <div class="obj"><span>istex:quantityOfItems</span><small>@en</small></div>
+              </li>
+              <li>
+                <div class="prop"><small>rdfs:range</small></div>
+                <div class="obj"><span><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span></div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2 id="query"><span>query</span><a href="#query"><small>https://data.istex.fr/ontology/istex#query</small></a></h2>
+            <ul class="features">
+              <li>
+                <div class="prop"><small>rdfs:comment</small></div>
+                <div class="obj"><span>Indique la requête (API) à réaliser pour accéder aux documents indexés par le concept
+                    décrit. Cette API permet de récupérer les documents et le nombre de documents. Préfixer
+                    la requête avec "https://api.istex.fr/document/?q=" pour activer l'API.<small>@fr</small></span></div>
+              </li>
+              <li>
+                <div class="prop"><small>rdfs:label</small></div>
+                <div class="obj"><span>istex:query</span></div>
+              </li>
+              <li>
+                <div class="prop"><small>rdfs:range</small></div>
+                <div class="obj"><span><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span></div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2 id="subjectLabel"><span>subjectLabel</span><a href="#subjectLabel"><small>https://data.istex.fr/ontology/istex#subjectLabel</small></a></h2>
+            <ul class="features">
+              <li>
+                <div class="prop"><small>rdfs:comment</small></div>
+                <div class="obj"><span>Indique la ou les catégorie(s) du document<small>@fr</small></span></div>
+              </li>
+              <li>
+                <div class="prop"><small>rdfs:domain</small></div>
+                <div class="obj"><span><a href="http://purl.org/ontology/bibo/Document">bibo:Document</a></span></div>
+              </li>
+              <li>
+                <div class="prop"><small>rdfs:label</small></div>
+                <div class="obj"><span>istex:subjectLabel</span><small>@en</small></div>
+              </li>
+              <li>
+                <div class="prop"><small>rdfs:range</small></div>
+                <div class="obj"><span><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span></div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2 id="identityProvider"><span>identityProvider</span><a href="#identityProvider"><small>https://data.istex.fr/ontology/istex#identityProvider</small></a></h2>
+            <ul class="features">
+              <li>
+                <div class="prop"><small>rdfs:comment</small></div>
+                <div class="obj"><span>Indique le nom du fournisseur d'identité pour le jeu organization-list<small>@fr</small></span></div>
+              </li>
+              <li>
+                <div class="prop"><small>rdfs:label</small></div>
+                <div class="obj"><span>istex:identityProvider</span><small>@en</small></div>
+              </li>
+              <li>
+                <div class="prop"><small>rdfs:range</small></div>
+                <div class="obj"><span><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span></div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </body>
+  </html>
 </html>
