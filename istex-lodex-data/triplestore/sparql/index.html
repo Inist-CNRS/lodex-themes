@@ -44,7 +44,7 @@
                             <ul class="site-navigation nav navbar-nav">
                                 <li><a href="https://data-set.data.istex.fr/">Les données</a></li>
                                 <li><a href="yasgui.html" title="Formulaire SPARQL">Formulaire SPARQL</a></li>
-                                <li><a href="https://data.istex.fr/sparql" title="SPARQL">SPARQL Endpoint</a></li>
+                                <li><a href="https://data.istex.fr/sparql/" title="SPARQL">SPARQL Endpoint</a></li>
                                 <li><a href="https://data.istex.fr/ontology/istex" title="Ontologie ISTEX">Ontologie</a></li>
                                 <li><a href="http://lodex.inist.fr/" title="blog LODEX" target="blog">Blog</a></li>
                             </ul>
@@ -85,7 +85,7 @@
                                 </h3>
 
                                 <p class="text-center">
-                                    data.istex.fr expose le Triple Store des données <a href="//www.istex.fr">ISTEX</a> via son <a href="//data.istex.fr/sparql">SPARQL Endpoint</a>.
+                                    data.istex.fr expose le Triple Store des données <a href="//www.istex.fr">ISTEX</a> via son <a href="//data.istex.fr/sparql/">SPARQL Endpoint</a>.
                                 </p>
                             </div>
                             <div class="col-sm-4">
@@ -141,7 +141,7 @@ WHERE {
 LIMIT 100`;
 var options = {
 catalogueEndpoints: [
-    { endpoint: "https://data.istex.fr/sparql",  title: "ISTEX" },
+    { endpoint: "https://data.istex.fr/sparql/",  title: "ISTEX" },
     { endpoint: "http://data.persee.fr/sparql/", title: "Persée" },
     { endpoint: "https://lod.abes.fr/sparql",    title: "ABES" },
     { endpoint: "http://www.rechercheisidore.fr/sparql", title: "ISIDORE"},
@@ -151,7 +151,7 @@ catalogueEndpoints: [
 ]
 };
 YASGUI.defaults.catalogueEndpoints = options.catalogueEndpoints;
-YASGUI.defaults.yasqe.sparql.endpoint = "https://data.istex.fr/sparql";
+YASGUI.defaults.yasqe.sparql.endpoint = "https://data.istex.fr/sparql/";
 var yasgui = YASGUI(document.getElementById("root"), options);
         </script>
 <!-- Piwik -->
