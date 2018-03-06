@@ -13,6 +13,9 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/style.css">
+	    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="css/istex.css">
 
         <!-- <script src="//content-delivery.istex.fr/web-header/main.js"></script> -->
 
@@ -21,51 +24,40 @@
         <title>data.istex.fr : Linked Data from ISTEX</title>
 
         <style>
-          .text-center { text-align: left; }
-          h3, .h3, .property_value { font-size: 1.17em; font-family: Roboto, sans-serif; }
-          th { background-color: rgba(197, 216, 50, 1); }
-          .h3-services{
-              font-weight: 400;
-              font-family: Montserrat;
-          }
+            .header-resource-section {
+                margin-bottom: 2rem;
+                background-color: rgba(233, 236, 239, 0.52);
+                border-radius: .3rem;
+                padding: 1rem;
+            }
         </style>
     </head>
     <body>
-        <!-- Main container -->
-        <div class="page-container">
-
-            <!-- Navigation Bloc -->
-            <div class="bloc bgc-carmine-pink d-bloc" id="nav-bloc">
-                <div class="container">
-                    <nav class="navbar row">
-                        <div class="navbar-header">
-                            <a class="navbar-brand" href="https://data.istex.fr/"><span class="et-icon-gears icon-sm icon-white zoomIn animated"></span> data.istex.fr</a>
-                            <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse"
-                                    data-target=".navbar-1">
-                                <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
-                                      class="icon-bar"></span><span class="icon-bar"></span>
-                            </button>
-                        </div>
-                        <div class="collapse navbar-collapse navbar-1">
-                            <ul class="site-navigation nav navbar-nav">
-                                <li><a href="https://data.istex.fr/triplestore/sparql/" title="Formulaire SPARQL">Formulaire SPARQL</a></li>
-                                <li><a href="https://data.istex.fr/sparql/" title="SPARQL">SPARQL Endpoint</a></li>
-                                <li><a href="https://data.istex.fr/ontology/istex/" title="Ontologie ISTEX">Ontologie</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-            	</div>
-           </div>
-           <!-- Navigation Bloc END -->
-
-            <!-- services -->
-            <div class="bloc l-bloc bgc-white" id="lodex">
-                <div class="container bloc-lg">
-                    <div id="root"></div>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Lodex</a>
                 </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="/graph">Resources</a></li>
+                    <li><a href="/admin">Administration</a></li>
+                    <li><a href="/login">Connection</a></li>
+                </ul>
             </div>
+        </nav>
+    	<div id="pageHead">
+    		<div id="istexTools">
+	    		<img src="img/istex_logo.svg" class="istexLogo" alt="" >
+    		</div>
+        	<img src="img/ic_Data_ISTEX-2.svg" class="dataLogo" alt="">
+        	<div id="pageTitle">data.istex.fr</div>      		
+    	</div>
 
-            <!-- porfolio END -->
+        <div class="container">
+            <div id="root"></div>
+        </div>
+
+        <div id="pageFooter">
             <div class="bloc bgc-carmine-pink d-bloc">
                 <div class="container bloc-md">
 
@@ -99,7 +91,7 @@
                         </div>
                         <div class="col-sm-4">
                             <div class="text-center">
-                                <a href="http://www.cnrs.fr/" title="CNRS" target="_blank"><img src="/img/cnrs130.png" alt="CNRS" title="Le site du CNRS"></a>
+                                <a href="http://www.cnrs.fr/" title="CNRS" target="_blank"><img src="img/cnrs130.png" alt="CNRS" title="Le site du CNRS"></a>
                             </div>
                         </div>
                     </div>
@@ -122,72 +114,66 @@
                 <div class="container bloc-sm">
                     <div class="row">
 
-                        <div class="col-xs-12 col-md-8 col-md-offset-2">
-                            <div class="col-sm-3 text-center">
+                        <div class="col-xs-12">
+                            <div class="col-sm-4 text-center">
                               <a class="social-lg"
                                  href="https://twitter.com/lodex_team"
                                  target="_blank">
                                 <span class="fa fa-twitter icon-md icon-carmine-pink" title="Twitter de Lodex"></span>
                               </a>
                             </div>
-                            <div class="col-sm-3 text-center">
+                            <div class="col-sm-4 text-center">
+                                2018 data.istex.fr&nbsp;|&nbsp;
+                              <a class="btn-admin"
+                                 href="/admin"
+                                 title="Administration">
+                                Administration
+                              </a>
+                            </div>
+                            <div class="col-sm-4 text-center">
                               <a class="social-lg"
                                  href="https://github.com/Inist-CNRS/lodex"
                                  target="_blank">
                                 <span class="fa fa-github icon-md icon-carmine-pink" title="GitHub de Lodex"></span>
                               </a>
                             </div>
-                            <div class="col-sm-3 text-center">
-                                <a class="social-lg"
-                                   href="http://lodex.inist.fr"
-                                   target="_blank">
-                                   <span class="fa fa-wordpress icon-md icon-carmine-pink" title="Blog de Lodex"></span>
-                                 </a>
-                            </div>
-                            <div class="col-sm-3 text-center">
-                              <a class="btn-admin"
-                                 href="/admin"
-                                 title="Administration">
-                                <span class="fa fa-cogs icon-md icon-carmine-pink" title="Backoffice"></span>
-                              </a>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Footer - bloc-8 END -->
         </div>
-    <!-- Main container END -->
- <!-- Piwik -->
-<script>
-  var _paq = _paq || [];
-  _paq.push([function() {
-                var self = this;
-                function getOriginalVisitorCookieTimeout() {
-                var now = new Date(),
-                nowTs = Math.round(now.getTime() / 1000),
-                visitorInfo = self.getVisitorInfo();
-                var createTs = parseInt(visitorInfo[2]);
-                var cookieTimeout = 33696000;
-                var originalTimeout = createTs + cookieTimeout - nowTs;
-                return originalTimeout;
-                }
-                this.setVisitorCookieTimeout( getOriginalVisitorCookieTimeout() );
-                }]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="https://piwik2.inist.fr/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '39']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript';
-                g.async=true;
-                g.defer=true;
-                g.src=u+'piwik.js';
-                s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Piwik Code -->
+            <!-- Footer - bloc-8 END -->
+	<!-- Piwik -->
+
+	<script>
+	  var _paq = _paq || [];
+	  _paq.push([function() {
+	                var self = this;
+	                function getOriginalVisitorCookieTimeout() {
+	                var now = new Date(),
+	                nowTs = Math.round(now.getTime() / 1000),
+	                visitorInfo = self.getVisitorInfo();
+	                var createTs = parseInt(visitorInfo[2]);
+	                var cookieTimeout = 33696000;
+	                var originalTimeout = createTs + cookieTimeout - nowTs;
+	                return originalTimeout;
+	                }
+	                this.setVisitorCookieTimeout( getOriginalVisitorCookieTimeout() );
+	                }]);
+	  _paq.push(['trackPageView']);
+	  _paq.push(['enableLinkTracking']);
+	  (function() {
+	    var u="https://piwik2.inist.fr/";
+	    _paq.push(['setTrackerUrl', u+'piwik.php']);
+	    _paq.push(['setSiteId', '39']);
+	    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+	    g.type='text/javascript';
+	                g.async=true;
+	                g.defer=true;
+	                g.src=u+'piwik.js';
+	                s.parentNode.insertBefore(g,s);
+	  })();
+	</script>
+	<!-- End Piwik Code -->
     </body>
 </html>

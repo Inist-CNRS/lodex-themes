@@ -1,0 +1,183 @@
+body {
+	padding-top: 0px;
+	font-family: 'Open Sans', sans-serif;
+	color: #303030;
+	background: url(../img/BG_ISTEX_LIGHT_DESKTOP.jpg) center repeat;
+}
+#pageHead {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(69, 140, 165,0.1);
+}
+#pageFooter {
+	background-color: rgba(69, 140, 165,0.1);
+}
+.text-center img {
+	padding-top: 10px;
+}
+#istexTools {
+	width: 100%;
+	background-color: #000;
+	text-align: center;
+}
+.istexLogo {
+	width: 60px;
+	height: 60px;
+}
+.dataLogo {
+	width: 10%;
+	height: 10%;
+	padding-top: 30px;
+}
+#pageTitle {
+	font-size: 3rem;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+	padding: 15px 0 15px 0;
+}
+.navbar {
+	display: none;
+}
+.property_language {
+	display: none;
+}
+.property_label_container {
+	margin-top: 50px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #000;
+}
+.property_value_container>div>div>div>div>div {
+	margin-left: 10px;
+}
+.property_value_container button {
+	background-color: #000!important;
+}
+.property_value_container button:hover {
+	background-color: #458ca5!important;
+}
+.property_value_container  button>div>div>span {
+	color: #c4d733!important;
+	font-weight: 700!important;
+}
+.property_value_container  button:hover>div>div>span {
+	color: #fff!important;
+}
+.dataDisplay {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	border-bottom: 1px #ccc solid;
+}
+.property {
+	padding-right: .5rem;
+	padding-left: .5rem;
+	min-width: 300px;
+}
+.bloc-lg {
+	margin-top: 50px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+.bloc-sm {
+	padding: 10px 0 10px 0;
+}
+.property_label {
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	color: #000!important;
+	font-size: 1.6rem!important;
+}
+.property_scheme {
+	background: url(../img/information.png);
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: right;
+    line-height: 2.4;
+}
+.property_scheme a {
+	visibility: hidden;
+}
+.property_scheme:hover a {
+	visibility: visible;
+	padding-right: 30px;
+}
+._m70zbn {
+	justify-content: space-between;
+}
+._150t054 {
+	height: 150px;
+	border: 1px solid #303030;
+	padding : 0!important;
+	width: 300px!important;
+	margin: 1%!important
+
+}
+._1hp9ikc {
+	text-transform: capitalize;
+	font-size: 2.2rem!important;
+}
+._1gevi64 {
+	padding:0!important;
+}
+._1gevi64 div {
+	height: 148px;
+}
+._1gevi64 div a {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+._1hp9ikc, ._kntyad {
+	text-align: center;
+}
+._1hp9ikc {
+	padding-top: 25px;
+	font-weight: bold;
+	font-size: 2rem ;
+}
+._kntyad  {
+	border-top: 1px solid #303030;
+	height: 50px!important;
+	line-height: 50px!important;
+	color: #c4d733!important;
+	background-color: #000;
+	position: relative;
+}
+._kntyad:hover {
+	color: #fff!important;
+	background-color: #458ca5;	
+}
+._kntyad:hover:before {
+	background-image: url(../img/ic_savoir_plus_white.svg);
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	background-position: 55px center;
+}
+._kntyad:before {
+	display: block;
+	padding-left: 35px;
+	width: 300px;
+	height: 50px;
+	content: "EN SAVOIR PLUS";
+	font-size: 18px;
+	background-image: url(../img/ic_savoir_plus_jaune.svg);
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	background-position: 55px center;
+}
+.btn-admin {
+	font-weight: 700;
+}
+.resourceURI>div:first-child {
+	margin-top: 50px;
+    padding-bottom: 10px;
+	border-bottom: 1px solid #000;
+}
+@media only screen and (max-width:646px) {
+	.property {
+		width: 100%!important;
+	}
+
+} 
