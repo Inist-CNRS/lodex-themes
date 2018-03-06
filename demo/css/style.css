@@ -12,10 +12,13 @@ html {
 body {
     width: 100%;
     margin: 5px auto;
+    color: #186c7b;
+    font-family:Capriola;
 }
 h1, h2, h3, h4, h5, h6 {
-    color: #474747;
+    color: #186c7a;
     font-weight: 400;
+    font-family: Source Sans Pro;
 }
 a {
     margin: 1px;
@@ -37,6 +40,9 @@ p {
     text-align: justify;
     margin-bottom: 1.5rem;
 }
+ul {
+  padding-left: 2em;
+}
 .bsbb {
     box-sizing: border-box;
 }
@@ -53,7 +59,7 @@ header {
     width: 30%;
     margin-left: 70%;
     height: 46px;
-    background-image: url("images/barre.png");
+    background-image: url("/img/barre.png");
     background-position: left 250px top 0px;
     background-repeat: repeat-x;
 }
@@ -128,7 +134,7 @@ header {
     min-height: 60vh;
     position: relative;
     border-top: 10px solid #186c7b;
-    background-image: url("images/bg-homepage.png");
+    background-image: url("/img/bg-homepage.png");
     background-repeat: repeat-x;
     background-position: 0 30px;
     padding-top: 10px;
@@ -189,7 +195,7 @@ footer {
 }
 .sousmenubas li {
     list-style-type: none;
-    background-image: url(images/puce.png);
+    background-image: url(/img/puce.png);
     background-repeat: no-repeat;
     background-position: left center;
     padding-left: 20px;
@@ -267,4 +273,10 @@ footer ul li a:focus {
     .titre, .logos {
         margin-top: 25px;
     }
+}
+/*****************************/
+/* LODEX *********************/
+/*****************************/
+.property_label {
+  font-family: "Source Sans Pro";
 }
