@@ -1,3 +1,7 @@
+.container {
+  padding: 2em;
+  font-size: 2em;
+}
 * {
   margin: 0;
   padding: 0;
@@ -78,13 +82,20 @@ header {
     margin: 0 15% 0 15%;
 }
 .titre {
-    width: 37.7%;
+    width: 67.7%;
     align-self: center;
 }
 .titre h1 {
     color: #186c7b;
     font-family: "capriola";
     font-size: 3rem;
+    text-align: center;
+}
+.titre h2 {
+    color: #186c7b;
+    font-family: "capriola";
+    font-size: 1.5rem;
+    font-style: italic;
     text-align: center;
 }
 .link {
@@ -207,6 +218,9 @@ footer .menubas li a, footer .menubas li a:visited, footer ul .menubas a:focus, 
     margin: 0;
     min-width: 100px;
     text-align: center;
+}
+footer ul li a {
+    color: #186c7b;
 }
 footer ul li a:hover,
 footer ul li a:focus {
