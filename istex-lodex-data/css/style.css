@@ -128,6 +128,7 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 
 .l-bloc{
 	color:rgba(0,0,0,.5);
+	color:#303030;
 }
 .l-bloc button:hover{
 	color:rgba(0,0,0,.7);
@@ -143,6 +144,7 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 }
 .l-bloc a{
 	color:rgba(0,0,0,.6);
+	color:#337ab7;
 }
 .l-bloc a:hover{
 	color:rgba(0,0,0,1);
