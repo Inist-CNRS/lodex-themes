@@ -127,7 +127,6 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 /* Light theme */
 
 .l-bloc{
-	color:rgba(0,0,0,.5);
 	color:#303030;
 }
 .l-bloc button:hover{
@@ -143,7 +142,6 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 	border-color:rgba(0,0,0,.1);
 }
 .l-bloc a{
-	color:rgba(0,0,0,.6);
 	color:#337ab7;
 }
 .l-bloc a:hover{
@@ -490,16 +488,13 @@ a[data-lightbox]:hover img{
 /* Background colour styles */
 
 .bgc-carmine-pink{
-	background-color:#c4d733;
 }
 .bgc-outer-space{
 	background-color:#47454B;
 }
 .bgc-white{
-	background-color:#ffffff;
 }
 .bgc-platinum{
-	background-color:#E5E5E5;
 }
 /* Text colour styles */
 
