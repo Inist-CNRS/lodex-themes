@@ -61,7 +61,7 @@ header {
     width: 100%;
     background-color: #fff;
     height: 128px;
-    max-width: 960px;
+    max-width: 93%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -135,7 +135,7 @@ header {
 }
 
 .api {
-    max-width: 960px;
+    max-width: 93%;
     margin: 0 auto;
     background-color: #fff;
     min-height: 50vh;
@@ -158,7 +158,7 @@ footer {
     display: flex;
     flex-direction: row;
     min-height: 15vh;
-    max-width: 960px;
+    max-width: 93%;
     margin: 0 auto;
 }
 .left, .center, .right {
