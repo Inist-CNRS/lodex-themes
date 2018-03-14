@@ -514,8 +514,8 @@ a[data-lightbox]:hover img{
 /* Icon colour styles */
 
 .icon-carmine-pink{
-	color:#c4d733!important;
-	border-color:#c4d733!important;
+	color:#000;
+	border-color:#000;
 }
 .icon-outer-space{
 	color:#47454B!important;

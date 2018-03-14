@@ -45,13 +45,16 @@
                 </ul>
             </div>
         </nav>
-    	<div id="pageHead">
-    		<div id="istexTools">
-	    		<img src="img/istex_logo.svg" class="istexLogo" alt="" >
-    		</div>
-        	<img src="img/ic_Data_ISTEX-2.svg" class="dataLogo" alt="">
-        	<div id="pageTitle">data.istex.fr</div>      		
-    	</div>
+        <div id="pageHead">
+            <div id="istexTools">
+                <img src="img/istex_logo.svg" class="istexLogo" alt="" >
+            </div>
+            <img src="img/ic_Data_ISTEX-2.svg" class="dataLogo" alt="">
+            <div id="pageTitle"><a href="https://data.istex.fr/">data.istex.fr</a></div>             
+            <p class="text-center">
+                data.istex.fr expose le Triple Store des données <a href="//www.istex.fr">ISTEX</a> via son <a href="//data.istex.fr/sparql">SPARQL Endpoint</a>.
+            </p>
+        </div>
 
         <div class="container">
             <div id="root"></div>
@@ -79,16 +82,10 @@
 
                         <div class="col-sm-4">
                             <div class="text-center">
-                                <span class="et-icon-gears icon-xl icon-carmine-pink animated zoomIn"></span>
+                                <a href="http://www.agence-nationale-recherche.fr/" title="CNRS" target="_blank"><img src="img/investissement_avenir.png" alt="ANR" title="Le site ANR"></a>
                             </div>
-                            <h3 class="text-center mg-md h3-services">
-                                data.istex.fr en quelques mots
-                            </h3>
-
-                            <p class="text-center">
-                                data.istex.fr expose le Triple Store des données <a href="//www.istex.fr">ISTEX</a> via son <a href="//data.istex.fr/sparql">SPARQL Endpoint</a>.
-                            </p>
                         </div>
+
                         <div class="col-sm-4">
                             <div class="text-center">
                                 <a href="http://www.cnrs.fr/" title="CNRS" target="_blank"><img src="img/cnrs130.png" alt="CNRS" title="Le site du CNRS"></a>
@@ -143,37 +140,37 @@
             </div>
         </div>
             <!-- Footer - bloc-8 END -->
-	<!-- Piwik -->
+    <!-- Piwik -->
 
-	<script>
-	  var _paq = _paq || [];
-	  _paq.push([function() {
-	                var self = this;
-	                function getOriginalVisitorCookieTimeout() {
-	                var now = new Date(),
-	                nowTs = Math.round(now.getTime() / 1000),
-	                visitorInfo = self.getVisitorInfo();
-	                var createTs = parseInt(visitorInfo[2]);
-	                var cookieTimeout = 33696000;
-	                var originalTimeout = createTs + cookieTimeout - nowTs;
-	                return originalTimeout;
-	                }
-	                this.setVisitorCookieTimeout( getOriginalVisitorCookieTimeout() );
-	                }]);
-	  _paq.push(['trackPageView']);
-	  _paq.push(['enableLinkTracking']);
-	  (function() {
-	    var u="https://piwik2.inist.fr/";
-	    _paq.push(['setTrackerUrl', u+'piwik.php']);
-	    _paq.push(['setSiteId', '39']);
-	    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-	    g.type='text/javascript';
-	                g.async=true;
-	                g.defer=true;
-	                g.src=u+'piwik.js';
-	                s.parentNode.insertBefore(g,s);
-	  })();
-	</script>
-	<!-- End Piwik Code -->
+    <script>
+      var _paq = _paq || [];
+      _paq.push([function() {
+                    var self = this;
+                    function getOriginalVisitorCookieTimeout() {
+                    var now = new Date(),
+                    nowTs = Math.round(now.getTime() / 1000),
+                    visitorInfo = self.getVisitorInfo();
+                    var createTs = parseInt(visitorInfo[2]);
+                    var cookieTimeout = 33696000;
+                    var originalTimeout = createTs + cookieTimeout - nowTs;
+                    return originalTimeout;
+                    }
+                    this.setVisitorCookieTimeout( getOriginalVisitorCookieTimeout() );
+                    }]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://piwik2.inist.fr/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '39']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript';
+                    g.async=true;
+                    g.defer=true;
+                    g.src=u+'piwik.js';
+                    s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Piwik Code -->
     </body>
 </html>
