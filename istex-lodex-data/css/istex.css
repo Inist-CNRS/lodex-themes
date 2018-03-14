@@ -1,6 +1,6 @@
 body {
 	padding-top: 0px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open sans', sans-serif!important;
 	font-size: 16px;
 	color: #303030;
 	background: url(../img/BG_ISTEX_LIGHT_DESKTOP.jpg) center repeat;
@@ -57,11 +57,18 @@ body {
 .property_value_container>div>div>div>div>div {
 	margin-left: 10px;
 }
+.property_value_container>div>div>div>._ucrgx>div {
+	margin-left: 0;
+}
+
 .property_value_container button {
 	background-color: #000!important;
 }
 .property_value_container button:hover {
 	background-color: #458ca5!important;
+}
+.property_label_container button {
+	background-color: transparent!important;
 }
 .property_value_container  button>div>div>span {
 	color: #c4d733!important;
@@ -192,6 +199,27 @@ body {
 	margin-top: 50px;
     padding-bottom: 10px;
 	border-bottom: 1px solid #000;
+}
+.main-resource-section button, a[tabindex] div span {
+	color: #337ab7!important;
+}
+button[tabindex] svg {
+	fill: #c4d733!important;
+}
+button:hover>div>svg, button:hover>svg {
+	fill: #fff!important;
+}
+.main-resource-section svg, .share-export svg, .select-version svg  {
+	fill: #337ab7;
+}
+._ucrqgx {
+	padding: 0!important;
+	background-color: transparent!important;
+	border: 1px solid #303030;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 200px;
 }
 @media only screen and (max-width:646px) {
 	.property {

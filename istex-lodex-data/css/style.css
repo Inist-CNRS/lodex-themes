@@ -20,7 +20,7 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 
 
 /* Globals type styling */
- h1, h2, h3, h4, h5, h6, p, label, .btn, a{
+ h1, h2, h3, h4, h5, h6, label, .btn {
 	font-family:Montserrat;
 }
 
