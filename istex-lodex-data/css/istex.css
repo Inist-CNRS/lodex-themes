@@ -27,9 +27,10 @@ body {
 	height: 60px;
 }
 .dataLogo {
-	width: 8%;
-	height: 8%;
+	width: 76%;
+	height: 76%;
 	padding-top: 30px;
+	padding-left: 12%;
 }
 #pageTitle {
 	font-size: 3rem;
@@ -54,13 +55,9 @@ body {
 .property_value {
 	font-family: 'Open Sans', sans-serif;	
 }
-.property_value_container>div>div>div>div>div {
+._m70zbn + div {
 	margin-left: 10px;
 }
-.property_value_container>div>div>div>._ucrgx>div {
-	margin-left: 0;
-}
-
 .property_value_container button {
 	background-color: #000!important;
 }
@@ -102,8 +99,8 @@ body {
 .property_label {
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
-	color: #000!important;
 	font-size: 1.6rem!important;
+	color: #000!important;
 }
 .property_scheme {
 	background: url(../img/information.png);
@@ -203,14 +200,26 @@ body {
 .main-resource-section button, a[tabindex] div span {
 	color: #337ab7!important;
 }
+.property_label button:hover {
+	background-color: transparent!important;
+}
 button[tabindex] svg {
 	fill: #c4d733!important;
 }
 button:hover>div>svg, button:hover>svg {
 	fill: #fff!important;
 }
+.header-resource-section>div>div>button svg {
+	fill: #000!important;
+}
+.configure-field svg {
+	fill: #c4d733!important;
+}
 .main-resource-section svg, .share-export svg, .select-version svg  {
 	fill: #337ab7;
+}
+.header-resource-section button[tabindex]:hover svg {
+	fill: #fff!important;
 }
 ._ucrqgx {
 	padding: 0!important;
@@ -219,11 +228,16 @@ button:hover>div>svg, button:hover>svg {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 200px;
+	height: 150px;
+}
+._ugrqgx div {
+	margin: 0!important
+}
+._ucrqgx ._kntyad {
+	height: 53px!important;
 }
 @media only screen and (max-width:646px) {
 	.property {
 		width: 100%!important;
 	}
-
 } 
