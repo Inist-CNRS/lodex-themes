@@ -5,19 +5,33 @@
     <!-- <link rel="stylesheet" href="../css/bootstrap.css"> -->
     <!-- <link rel="stylesheet" href="../css/style.css"> -->
     <link rel="stylesheet" href="/ontology/istex/doremus.css">
-    <script type="text/javascript" src="//content-delivery.istex.fr/web-header/main.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <nav><a href="http://data.istex.fr/">data.istex.fr</a></nav>
+    <nav>
+      <a href="http://data.istex.fr/">data.istex.fr</a>
+    </nav>
+    <div id="pageHead">
+      <div id="istexTools">
+          <img src="/img/istex_logo.svg" class="istexLogo" alt="">
+      </div>
+    </div>
     <section class="cover">
       <div class="inside">
         <div class="description">
           <h1>Ontologie ISTEX</h1>
           <p>Ontologie du projet ISTEX pour le triple store Triplex</p>
-          <p>Cette ontologie définit 12 Classes, 10 Object Properties et 9 Data Properties.</p><a class="btn" href="https://github.com/istex/ontology/blob/master/istexXML.owl"><span>Disponible sur GitHub</span></a></div>
-        <div class="logo"><img alt="" src="lodex.png"></div>
+          <p>Cette ontologie définit 12 Classes, 10 Object Properties et 9 Data Properties.</p><a class="btn" href="https://github.com/istex/ontology/blob/master/istexXML.owl"><span>Disponible sur GitHub</span></a>
+        </div>
+        <div class="logo">
+          <a href="http://data.istex.fr">
+            <img alt="logo data istex" src="/img/ic_Data_ISTEX-2.svg">
+            <div class="dataIstex">
+              data.istex.fr
+            </div>
+          </a>
+        </div>
       </div>
     </section>
     <h1 style="padding-bottom:10px">Sommaire</h1>
@@ -79,56 +93,56 @@
       </ul>
     </section>
     <p style="text-align:center"><img src="https://docs.google.com/drawings/d/e/2PACX-1vRduIKz3kT4Ax2RTnFpp88nCEFzlNhyzpsdXMyLTL5-bVTzaTCWUrqbAA1LWMAzGCMwWFqxaecsEnzo/pub?w=960&h=720"></p>
-    <h1>Ontologies importées</h1>
+    <h2>Ontologies importées</h2>
     <section class="ontologyImports card">
       <ul class="list">
         <li>
-          <h2 id="bibo"><a href="http://purl.org/ontology/bibo/">BIBO</a><small><i><a href="http://purl.org/ontology/bibo/">http://purl.org/ontology/bibo/</a></i></small></h2>
+          <h3 id="bibo"><a href="http://purl.org/ontology/bibo/">BIBO</a><small><i><a href="http://purl.org/ontology/bibo/">http://purl.org/ontology/bibo/</a></i></small></h3>
           <div><span>fournit les principaux concepts et propriétés pour décrire des références bibliographiques
               (livres, articles, etc.)</span></div>
         </li>
         <li>
-          <h2 id="skos"><a href="http://www.w3.org/2004/02/skos/core">SKOS</a><small><i><a href="http://www.w3.org/2004/02/skos/core">http://www.w3.org/2004/02/skos/core</a></i></small></h2>
+          <h3 id="skos"><a href="http://www.w3.org/2004/02/skos/core">SKOS</a><small><i><a href="http://www.w3.org/2004/02/skos/core">http://www.w3.org/2004/02/skos/core</a></i></small></h3>
           <div><span>est un modèle de données commun pour le partage et la liaison de systèmes d'organisation</span></div>
         </li>
         <li>
-          <h2 id="dcat"><a href="http://www.w3.org/ns/dcat">DCAT</a><small><i><a href="http://www.w3.org/ns/dcat">http://www.w3.org/ns/dcat</a></i></small></h2>
+          <h3 id="dcat"><a href="http://www.w3.org/ns/dcat">DCAT</a><small><i><a href="http://www.w3.org/ns/dcat">http://www.w3.org/ns/dcat</a></i></small></h3>
           <div><span>conçu pour faciliter l'interopérabilité entre les catalogues de données publiés sur
               le Web</span></div>
         </li>
         <li>
-          <h2 id="dcterms"><a href="http://purl.org/dc/terms/">DCTERMS</a><small><i><a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a></i></small></h2>
+          <h3 id="dcterms"><a href="http://purl.org/dc/terms/">DCTERMS</a><small><i><a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a></i></small></h3>
           <div><span>ensemble de termes de vocabulaire utilisés pour décrire des ressources à des fins
               de découverte</span></div>
         </li>
         <li>
-          <h2 id="prov"><a href="http://www.w3.org/ns/prov">PROV</a><small><i><a href="http://www.w3.org/ns/prov">http://www.w3.org/ns/prov</a></i></small></h2>
+          <h3 id="prov"><a href="http://www.w3.org/ns/prov">PROV</a><small><i><a href="http://www.w3.org/ns/prov">http://www.w3.org/ns/prov</a></i></small></h3>
           <div><span>décrit les informations de provenance sur le web</span></div>
         </li>
         <li>
-          <h2 id="schema"><a href="http://schema.org">SCHEMA</a><small><i><a href="http://schema.org">http://schema.org</a></i></small></h2>
+          <h3 id="schema"><a href="http://schema.org">SCHEMA</a><small><i><a href="http://schema.org">http://schema.org</a></i></small></h3>
           <div><span>a pour mission de créer, maintenir et promouvoir des schémas pour des données structurées
               sur le Web</span></div>
         </li>
         <li>
-          <h2 id="foaf"><a href="http://xmlns.com/foaf/0.1/">FOAF</a><small><i><a href="http://xmlns.com/foaf/0.1/">http://xmlns.com/foaf/0.1/</a></i></small></h2>
+          <h3 id="foaf"><a href="http://xmlns.com/foaf/0.1/">FOAF</a><small><i><a href="http://xmlns.com/foaf/0.1/">http://xmlns.com/foaf/0.1/</a></i></small></h3>
           <div><span>décrit des personnes et les relations qu'elles entretiennent entre elles</span></div>
         </li>
         <li>
-          <h2 id="lom"><a href="http://data.opendiscoveryspace.eu/lom_ontology_ods.owl">IEEE-Lom</a><small><i><a href="http://data.opendiscoveryspace.eu/lom_ontology_ods.owl">http://data.opendiscoveryspace.eu/lom_ontology_ods.owl</a></i></small></h2>
+          <h3 id="lom"><a href="http://data.opendiscoveryspace.eu/lom_ontology_ods.owl">IEEE-Lom</a><small><i><a href="http://data.opendiscoveryspace.eu/lom_ontology_ods.owl">http://data.opendiscoveryspace.eu/lom_ontology_ods.owl</a></i></small></h3>
           <div><span>décrit des ressources pédagogiques</span></div>
         </li>
         <li>
-          <h2 id="geonames"><a href="http://www.geonames.org/ontology/documentation.html">GEONAMES</a><small><i><a href="http://www.geonames.org/ontology/documentation.html">http://www.geonames.org/ontology/documentation.html</a></i></small></h2>
+          <h3 id="geonames"><a href="http://www.geonames.org/ontology/documentation.html">GEONAMES</a><small><i><a href="http://www.geonames.org/ontology/documentation.html">http://www.geonames.org/ontology/documentation.html</a></i></small></h3>
           <div><span>ajoute des informations sémantiques géospatiales au W3C</span></div>
         </li>
       </ul>
     </section>
-    <h1>Classes</h1>
+    <h2>Classes</h2>
     <section class="classes card">
       <ul class="list">
         <li>
-          <h2 id="ContentTypeConcept"><span>ContentTypeConcept</span><a href="#ContentTypeConcept"><small>https://data.istex.fr/ontology/istex#ContentTypeConcept</small></a></h2>
+          <h3 id="ContentTypeConcept"><span>ContentTypeConcept</span><a href="#ContentTypeConcept"><small>https://data.istex.fr/ontology/istex#ContentTypeConcept</small></a></h3>
           <ul class="features">
             <li>
               <div class="prop"><small>rdfs:comment</small></div>
@@ -146,7 +160,7 @@
           </ul>
         </li>
         <li>
-          <h2 id="EnrichmentProcessConcept"><span>EnrichmentProcessConcept</span><a href="#EnrichmentProcessConcept"><small>https://data.istex.fr/ontology/istex#EnrichmentProcessConcept</small></a></h2>
+          <h3 id="EnrichmentProcessConcept"><span>EnrichmentProcessConcept</span><a href="#EnrichmentProcessConcept"><small>https://data.istex.fr/ontology/istex#EnrichmentProcessConcept</small></a></h3>
           <ul class="features">
             <li>
               <div class="prop"><small>rdfs:comment</small></div>
@@ -163,7 +177,7 @@
           </ul>
         </li>
         <li>
-          <h2 id="GeographicConcept"><span>GeographicConcept</span><a href="#GeographicConcept"><small>https://data.istex.fr/ontology/istex#GeographicConcept</small></a></h2>
+          <h3 id="GeographicConcept"><span>GeographicConcept</span><a href="#GeographicConcept"><small>https://data.istex.fr/ontology/istex#GeographicConcept</small></a></h3>
           <ul class="features">
             <li>
               <div class="prop"><small>rdfs:comment</small></div>
@@ -181,7 +195,7 @@
           </ul>
         </li>
         <li>
-          <h2 id="InistConcept"><span>InistConcept</span><a href="#InistConcept"><small>https://data.istex.fr/ontology/istex#InistConcept</small></a></h2>
+          <h3 id="InistConcept"><span>InistConcept</span><a href="#InistConcept"><small>https://data.istex.fr/ontology/istex#InistConcept</small></a></h3>
           <ul class="features">
             <li>
               <div class="prop"><small>rdfs:comment</small></div>
@@ -198,7 +212,7 @@
           </ul>
         </li>
         <li>
-          <h2 id="NamedEntityConcept"><span>NamedEntityConcept</span><a href="#NamedEntityConcept"><small>https://data.istex.fr/ontology/istex#NamedEntityConcept</small></a></h2>
+          <h3 id="NamedEntityConcept"><span>NamedEntityConcept</span><a href="#NamedEntityConcept"><small>https://data.istex.fr/ontology/istex#NamedEntityConcept</small></a></h3>
           <ul class="features">
             <li>
               <div class="prop"><small>rdfs:comment</small></div>
@@ -216,7 +230,7 @@
           </ul>
         </li>
         <li>
-          <h2 id="OrganizationConcept"><span>OrganizationConcept</span><a href="#OrganizationConcept"><small>https://data.istex.fr/ontology/istex#OrganizationConcept</small></a></h2>
+          <h3 id="OrganizationConcept"><span>OrganizationConcept</span><a href="#OrganizationConcept"><small>https://data.istex.fr/ontology/istex#OrganizationConcept</small></a></h3>
           <ul class="features">
             <li>
               <div class="prop"><small>rdfs:comment</small></div>
@@ -233,7 +247,7 @@
           </ul>
         </li>
         <li>
-          <h2 id="PlaceConcept"><span>PlaceConcept</span><a href="#PlaceConcept"><small>https://data.istex.fr/ontology/istex#PlaceConcept</small></a></h2>
+          <h3 id="PlaceConcept"><span>PlaceConcept</span><a href="#PlaceConcept"><small>https://data.istex.fr/ontology/istex#PlaceConcept</small></a></h3>
           <ul class="features">
             <li>
               <div class="prop"><small>rdfs:comment</small></div>
@@ -251,7 +265,7 @@
           </ul>
         </li>
         <li>
-          <h2 id="PublicationTypeConcept"><span>PublicationTypeConcept</span><a href="#PublicationTypeConcept"><small>https://data.istex.fr/ontology/istex#PublicationTypeConcept</small></a></h2>
+          <h3 id="PublicationTypeConcept"><span>PublicationTypeConcept</span><a href="#PublicationTypeConcept"><small>https://data.istex.fr/ontology/istex#PublicationTypeConcept</small></a></h3>
           <ul class="features">
             <li>
               <div class="prop"><small>rdfs:comment</small></div>
@@ -269,7 +283,7 @@
           </ul>
         </li>
         <li>
-          <h2 id="PublisherConcept"><span>PublisherConcept</span><a href="#PublisherConcept"><small>https://data.istex.fr/ontology/istex#PublisherConcept</small></a></h2>
+          <h3 id="PublisherConcept"><span>PublisherConcept</span><a href="#PublisherConcept"><small>https://data.istex.fr/ontology/istex#PublisherConcept</small></a></h3>
           <ul class="features">
             <li>
               <div class="prop"><small>rdfs:comment</small></div>
@@ -287,7 +301,7 @@
           </ul>
         </li>
         <li>
-          <h2 id="ScienceMetrixConcept"><span>ScienceMetrixConcept</span><a href="#ScienceMetrixConcept"><small>https://data.istex.fr/ontology/istex#ScienceMetrixConcept</small></a></h2>
+          <h3 id="ScienceMetrixConcept"><span>ScienceMetrixConcept</span><a href="#ScienceMetrixConcept"><small>https://data.istex.fr/ontology/istex#ScienceMetrixConcept</small></a></h3>
           <ul class="features">
             <li>
               <div class="prop"><small>rdfs:comment</small></div>
@@ -304,7 +318,7 @@
           </ul>
         </li>
         <li>
-          <h2 id="ScientificDomain"><span>ScientificDomain</span><a href="#ScientificDomain"><small>https://data.istex.fr/ontology/istex#ScientificDomain</small></a></h2>
+          <h3 id="ScientificDomain"><span>ScientificDomain</span><a href="#ScientificDomain"><small>https://data.istex.fr/ontology/istex#ScientificDomain</small></a></h3>
           <ul class="features">
             <li>
               <div class="prop"><small>rdfs:comment</small></div>
@@ -321,7 +335,7 @@
           </ul>
         </li>
         <li>
-          <h2 id="ScopusConcept"><span>ScopusConcept</span><a href="#ScopusConcept"><small>https://data.istex.fr/ontology/istex#ScopusConcept</small></a></h2>
+          <h3 id="ScopusConcept"><span>ScopusConcept</span><a href="#ScopusConcept"><small>https://data.istex.fr/ontology/istex#ScopusConcept</small></a></h3>
           <ul class="features">
             <li>
               <div class="prop"><small>rdfs:comment</small></div>
@@ -338,7 +352,7 @@
           </ul>
         </li>
         <li>
-          <h2 id="WosConcept"><span>WosConcept</span><a href="#WosConcept"><small>https://data.istex.fr/ontology/istex#WosConcept</small></a></h2>
+          <h3 id="WosConcept"><span>WosConcept</span><a href="#WosConcept"><small>https://data.istex.fr/ontology/istex#WosConcept</small></a></h3>
           <ul class="features">
             <li>
               <div class="prop"><small>rdfs:comment</small></div>
@@ -356,11 +370,11 @@
         </li>
       </ul>
     </section>
-    <h1>Object Properties</h1>
+    <h2>Object Properties</h2>
     <section class="properties card">
       <ul class="list">
         <li>
-          <h2 id="contentType"><span>contentType</span><a href="#contentType"><small>https://data.istex.fr/ontology/istex#contentType</small></a></h2>
+          <h3 id="contentType"><span>contentType</span><a href="#contentType"><small>https://data.istex.fr/ontology/istex#contentType</small></a></h3>
           <ul class="features">
             <li>
               <div class="prop"><small>rdfs:comment</small></div>
@@ -381,7 +395,7 @@
           </ul>
         </li>
         <li>
-          <h2 id="enrichmentProcess"><span>enrichmentProcess</span><a href="#enrichmentProcess"><small>https://data.istex.fr/ontology/istex#enrichmentProcess</small></a></h2>
+          <h3 id="enrichmentProcess"><span>enrichmentProcess</span><a href="#enrichmentProcess"><small>https://data.istex.fr/ontology/istex#enrichmentProcess</small></a></h3>
           <ul class="features">
             <li>
               <div class="prop"><small>rdfs:comment</small></div>
@@ -402,7 +416,7 @@
           </ul>
         </li>
         <li>
-          <h2 id="extractedEntity"><span>extractedEntity</span><a href="#extractedEntity"><small>https://data.istex.fr/ontology/istex#extractedEntity</small></a></h2>
+          <h3 id="extractedEntity"><span>extractedEntity</span><a href="#extractedEntity"><small>https://data.istex.fr/ontology/istex#extractedEntity</small></a></h3>
           <ul class="features">
             <li>
               <div class="prop"><small>rdfs:comment</small></div>
@@ -423,7 +437,7 @@
           </ul>
         </li>
         <li>
-          <h2 id="extractedGeog"><span>extractedGeog</span><a href="#extractedGeog"><small>https://data.istex.fr/ontology/istex#extractedGeog</small></a></h2>
+          <h3 id="extractedGeog"><span>extractedGeog</span><a href="#extractedGeog"><small>https://data.istex.fr/ontology/istex#extractedGeog</small></a></h3>
           <ul class="features">
             <li>
               <div class="prop"><small>rdfs:comment</small></div>
@@ -444,7 +458,7 @@
           </ul>
         </li>
         <li>
-          <h2 id="extractedOrganization"><span>extractedOrganization</span><a href="#extractedOrganization"><small>https://data.istex.fr/ontology/istex#extractedOrganization</small></a></h2>
+          <h3 id="extractedOrganization"><span>extractedOrganization</span><a href="#extractedOrganization"><small>https://data.istex.fr/ontology/istex#extractedOrganization</small></a></h3>
           <ul class="features">
             <li>
               <div class="prop"><small>rdfs:comment</small></div>
@@ -465,7 +479,7 @@
           </ul>
         </li>
         <li>
-          <h2 id="extractedPlace"><span>extractedPlace</span><a href="#extractedPlace"><small>https://data.istex.fr/ontology/istex#extractedPlace</small></a></h2>
+          <h3 id="extractedPlace"><span>extractedPlace</span><a href="#extractedPlace"><small>https://data.istex.fr/ontology/istex#extractedPlace</small></a></h3>
           <ul class="features">
             <li>
               <div class="prop"><small>rdfs:comment</small></div>
@@ -486,7 +500,7 @@
           </ul>
         </li>
         <li>
-          <h2 id="publicationType"><span>publicationType</span><a href="#publicationType"><small>https://data.istex.fr/ontology/istex#publicationType</small></a></h2>
+          <h3 id="publicationType"><span>publicationType</span><a href="#publicationType"><small>https://data.istex.fr/ontology/istex#publicationType</small></a></h3>
           <ul class="features">
             <li>
               <div class="prop"><small>rdfs:comment</small></div>
@@ -507,7 +521,7 @@
           </ul>
         </li>
         <li>
-          <h2 id="subjectInist"><span>subjectInist</span><a href="#subjectInist"><small>https://data.istex.fr/ontology/istex#subjectInist</small></a></h2>
+          <h3 id="subjectInist"><span>subjectInist</span><a href="#subjectInist"><small>https://data.istex.fr/ontology/istex#subjectInist</small></a></h3>
           <ul class="features">
             <li>
               <div class="prop"><small>rdfs:comment</small></div>
@@ -528,7 +542,7 @@
           </ul>
         </li>
         <li>
-          <h2 id="subjectScienceMetrix"><span>subjectScienceMetrix</span><a href="#subjectScienceMetrix"><small>https://data.istex.fr/ontology/istex#subjectScienceMetrix</small></a></h2>
+          <h3 id="subjectScienceMetrix"><span>subjectScienceMetrix</span><a href="#subjectScienceMetrix"><small>https://data.istex.fr/ontology/istex#subjectScienceMetrix</small></a></h3>
           <ul class="features">
             <li>
               <div class="prop"><small>rdfs:comment</small></div>
@@ -549,7 +563,7 @@
           </ul>
         </li>
         <li>
-          <h2 id="subjectWos"><span>subjectWos</span><a href="#subjectWos"><small>https://data.istex.fr/ontology/istex#subjectWos</small></a></h2>
+          <h3 id="subjectWos"><span>subjectWos</span><a href="#subjectWos"><small>https://data.istex.fr/ontology/istex#subjectWos</small></a></h3>
           <ul class="features">
             <li>
               <div class="prop"><small>rdfs:comment</small></div>
@@ -570,7 +584,7 @@
           </ul>
         </li>
         <li>
-          <h2 id="subjectScopus"><span>subjectScopus</span><a href="#subjectScopus"><small>https://data.istex.fr/ontology/istex#subjectScopus</small></a></h2>
+          <h3 id="subjectScopus"><span>subjectScopus</span><a href="#subjectScopus"><small>https://data.istex.fr/ontology/istex#subjectScopus</small></a></h3>
           <ul class="features">
             <li>
               <div class="prop"><small>rdfs:comment</small></div>
@@ -591,11 +605,11 @@
           </ul>
         </li>
       </section>
-      <h1>Data Properties</h1>
+      <h2>Data Properties</h2>
       <section class="properties card">
         <ul class="list">
           <li>
-            <h2 id="accessURL"><span>accessURL</span><a href="#accessURL"><small>https://data.istex.fr/ontology/istex#accessURL</small></a></h2>
+            <h3 id="accessURL"><span>accessURL</span><a href="#accessURL"><small>https://data.istex.fr/ontology/istex#accessURL</small></a></h3>
             <ul class="features">
               <li>
                 <div class="prop"><small>rdfs:comment</small></div>
@@ -616,7 +630,7 @@
             </ul>
           </li>
           <li>
-            <h2 id="affiliation"><span>affiliation</span><a href="#affiliation"><small>https://data.istex.fr/ontology/istex#affiliation</small></a></h2>
+            <h3 id="affiliation"><span>affiliation</span><a href="#affiliation"><small>https://data.istex.fr/ontology/istex#affiliation</small></a></h3>
             <ul class="features">
               <li>
                 <div class="prop"><small>rdfs:comment</small></div>
@@ -637,7 +651,7 @@
             </ul>
           </li>
           <li>
-            <h2 id="constraint"><span>constraint</span><a href="#constraint"><small>https://data.istex.fr/ontology/istex#constraint</small></a></h2>
+            <h3 id="constraint"><span>constraint</span><a href="#constraint"><small>https://data.istex.fr/ontology/istex#constraint</small></a></h3>
             <ul class="features">
               <li>
                 <div class="prop"><small>rdfs:comment</small></div>
@@ -658,7 +672,7 @@
             </ul>
           </li>
           <li>
-            <h2 id="enrichmentType"><span>enrichmentType</span><a href="#enrichmentType"><small>https://data.istex.fr/ontology/istex#enrichmentType</small></a></h2>
+            <h3 id="enrichmentType"><span>enrichmentType</span><a href="#enrichmentType"><small>https://data.istex.fr/ontology/istex#enrichmentType</small></a></h3>
             <ul class="features">
               <li>
                 <div class="prop"><small>rdfs:comment</small></div>
@@ -679,7 +693,7 @@
             </ul>
           </li>
           <li>
-            <h2 id="idIstex"><span>idIstex</span><a href="#idIstex"><small>https://data.istex.fr/ontology/istex#idIstex</small></a></h2>
+            <h3 id="idIstex"><span>idIstex</span><a href="#idIstex"><small>https://data.istex.fr/ontology/istex#idIstex</small></a></h3>
             <ul class="features">
               <li>
                 <div class="prop"><small>rdfs:comment</small></div>
@@ -700,7 +714,7 @@
             </ul>
           </li>
           <li>
-            <h2 id="quantityOfItems"><span>quantityOfItems</span><a href="#quantityOfItems"><small>https://data.istex.fr/ontology/istex#quantityOfItems</small></a></h2>
+            <h3 id="quantityOfItems"><span>quantityOfItems</span><a href="#quantityOfItems"><small>https://data.istex.fr/ontology/istex#quantityOfItems</small></a></h3>
             <ul class="features">
               <li>
                 <div class="prop"><small>rdfs:comment</small></div>
@@ -721,7 +735,7 @@
             </ul>
           </li>
           <li>
-            <h2 id="query"><span>query</span><a href="#query"><small>https://data.istex.fr/ontology/istex#query</small></a></h2>
+            <h3 id="query"><span>query</span><a href="#query"><small>https://data.istex.fr/ontology/istex#query</small></a></h3>
             <ul class="features">
               <li>
                 <div class="prop"><small>rdfs:comment</small></div>
@@ -740,7 +754,7 @@
             </ul>
           </li>
           <li>
-            <h2 id="subjectLabel"><span>subjectLabel</span><a href="#subjectLabel"><small>https://data.istex.fr/ontology/istex#subjectLabel</small></a></h2>
+            <h3 id="subjectLabel"><span>subjectLabel</span><a href="#subjectLabel"><small>https://data.istex.fr/ontology/istex#subjectLabel</small></a></h3>
             <ul class="features">
               <li>
                 <div class="prop"><small>rdfs:comment</small></div>
@@ -761,7 +775,7 @@
             </ul>
           </li>
           <li>
-            <h2 id="identityProvider"><span>identityProvider</span><a href="#identityProvider"><small>https://data.istex.fr/ontology/istex#identityProvider</small></a></h2>
+            <h3 id="identityProvider"><span>identityProvider</span><a href="#identityProvider"><small>https://data.istex.fr/ontology/istex#identityProvider</small></a></h3>
             <ul class="features">
               <li>
                 <div class="prop"><small>rdfs:comment</small></div>
@@ -778,24 +792,75 @@
             </ul>
           </li>
           <li>
-                <h2 id="tool"><span>tool</span><a href="#tool"><small>https://data.istex.fr/ontology/istex#tool</small></a></h2>
-                <ul class="features">
-                    <li>
-                        <div class="prop"><small>rdfs:comment</small></div>
-                        <div class="obj"><span>Indique le nom de l'outil utilisé dans les processus d'enrichissement ISTEX<small>@fr</small></span></div>
-                    </li>
-                    <li>
-                        <div class="prop"><small>rdfs:label</small></div>
-                        <div class="obj"><span>istex:tool</span></div>
-                    </li>
-                    <li>
-                        <div class="prop"><small>rdfs:range</small></div>
-                        <div class="obj"><span><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span></div>
-                    </li>
-                </ul>
+          <h3 id="tool"><span>tool</span><a href="#tool"><small>https://data.istex.fr/ontology/istex#tool</small></a></h3>
+          <ul class="features">
+            <li>
+                <div class="prop"><small>rdfs:comment</small></div>
+                <div class="obj"><span>Indique le nom de l'outil utilisé dans les processus d'enrichissement ISTEX<small>@fr</small></span></div>
             </li>
-        </ul>
+            <li>
+                <div class="prop"><small>rdfs:label</small></div>
+                <div class="obj"><span>istex:tool</span></div>
+            </li>
+            <li>
+                <div class="prop"><small>rdfs:range</small></div>
+                <div class="obj"><span><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span></div>
+            </li>
+          </ul>
+        </li>
+      </ul>
       </section>
+            <div id="pageFooter">
+
+        <!-- services -->
+        <div class="blocUp">
+          <div class="row">
+            <div class="col-sm-4">
+              <div id="twitter_feed_widget-2" class="widget widget_twitter_feed_widget">
+                <a class="twitter-timeline" href="https://twitter.com/Projet_ISTEX"
+                    data-tweet-limit="1"
+                    data-chrome="noheader nofooter noborders transparent noscrollbar"
+                    >
+                  Tweets de @Projet_ISTEX
+                </a>
+                <script>
+                  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                </script>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="text-center">
+                <a href="http://www.agence-nationale-recherche.fr/" title="CNRS" target="_blank">
+                  <img src="/img/investissement_avenir.png" alt="ANR" title="Le site ANR">
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="text-center">
+                <a href="http://www.cnrs.fr/" title="CNRS" target="_blank">
+                  <img src="/img/cnrs130.png" alt="CNRS" title="Le site du CNRS">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- services END -->
+        <div class="blocUp">
+          <div class="row">
+            <div class="col-sm-4">           
+            </div>
+            <div class="col-sm-4">
+              <div class="text-center">
+                2018 data.istex.fr
+                </div>              
+            </div>
+            <div class="col-sm-4">
+            </div>
+          </div>
+        </div>
+      </div>          
+      <!-- Footer - bloc-8 END -->
+
     </body>
   </html>
 </html>
