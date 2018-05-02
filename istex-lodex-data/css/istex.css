@@ -60,9 +60,11 @@ body {
 }
 .property_value_container button {
 	background-color: #000!important;
+	color: ##c4d733!important;
 }
 .property_value_container button:hover {
 	background-color: #458ca5!important;
+	color: #fff!important;
 }
 .property_label_container button {
 	background-color: transparent!important;
@@ -236,6 +238,12 @@ button:hover>div>svg, button:hover>svg {
 ._ucrqgx ._kntyad {
 	height: 53px!important;
 }
+._1ijq51m {
+	padding: 0;
+	background: transparent;
+	border: 1px solid #000;
+}
+
 @media only screen and (max-width:646px) {
 	.property {
 		width: 100%!important;
