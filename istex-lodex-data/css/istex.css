@@ -27,10 +27,10 @@ body {
 	height: 60px;
 }
 .dataLogo {
-	width: 76%;
-	height: 76%;
+	width: 100px;
+	height: 126px;
 	padding-top: 30px;
-	padding-left: 12%;
+	padding-left: 16px;
 }
 #pageTitle {
 	font-size: 3rem;
