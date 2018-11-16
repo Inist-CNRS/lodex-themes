@@ -162,7 +162,6 @@ nav  {
   display: block;
   padding: 8em 2em;
   margin-bottom: 2em;
-  background-color: rgba(69, 140, 165,0.1);
 }
 @media only screen and (max-width: 800px) {
   .cover {
