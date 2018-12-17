@@ -19,7 +19,7 @@
         <div class="description">
           <h1>Ontologie ISTEX</h1>
           <p>Ontologie du projet ISTEX.</p>
-          <p>Cette ontologie définit 13 Classes, 11 Object Properties et 12 Data Properties.</p><a class="btn" href="https://github.com/istex/ontology/blob/master/istexXML.owl"><span>Disponible sur GitHub</span></a>
+          <p>Cette ontologie définit 13 Classes, 11 Object Properties et 13 Data Properties.</p><a class="btn" href="https://github.com/istex/ontology/blob/master/istexXML.owl"><span>Disponible sur GitHub</span></a>
         </div>
         <div class="logo">
           <a href="http://data.istex.fr">
@@ -82,6 +82,7 @@
         <li><a href="#affiliation"><span>affiliation</span></a></li>
         <li><a href="#analysisType"><span>analysisType</span></a></li>
         <li><a href="#constraint"><span>constraint</span></a></li>
+        <li><a href="#eISBN"><span>eISBN</span></a></li>
         <li><a href="#enrichmentType"><span>enrichmentType</span></a></li>
         <li><a href="#identityProvider"><span>identityProvider</span></a></li>
         <li><a href="#idIstex"><span>idIstex</span></a></li>
@@ -709,6 +710,27 @@
             <li>
               <div class="prop"><small>rdfs:range</small></div>
               <div class="obj"><span><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span></div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h3 id="eISBN"><span>eISBN</span><a href="#eISBN"><small>https://data.istex.fr/ontology/istex#eISBN</small></a></h3>
+          <ul class="features">
+            <li>
+              <div class="prop"><small>rdfs:comment</small></div>
+              <div class="obj"><span>Identifiant eISBN de l'objet documentaire.<small>@fr</small></span></div>
+            </li>
+            <li>
+              <div class="prop"><small>rdfs:domain</small></div>
+              <div class="obj"><span><a href="http://purl.org/ontology/bibo/Document">bibo:Document</a></span></div>
+            </li>
+            <li>
+              <div class="prop"><small>rdfs:label</small></div>
+              <div class="obj"><span>istex:eISBN</span><small>@en</small></div>
+            </li>
+            <li>
+              <div class="prop"><small>rdfs:range</small></div>
+              <div class="obj"><span><a href="http://www.w3.org/2001/XMLSchema#anyURI">xsd:anyURI</a></span></div>
             </li>
           </ul>
         </li>
