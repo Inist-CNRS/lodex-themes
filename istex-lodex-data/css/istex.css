@@ -243,7 +243,13 @@ button:hover>div>svg, button:hover>svg {
 	background: transparent;
 	border: 1px solid #000;
 }
-
+/* ajout icone menu droite */
+._qhk70v {
+   min-height : 75px!important;
+}
+._d8ev20 {
+   max-height : 33px!important ;
+}
 @media only screen and (max-width:646px) {
 	.property {
 		width: 100%!important;
