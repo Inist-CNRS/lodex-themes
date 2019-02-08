@@ -142,6 +142,8 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	height: 100%;
+	min-height: 148px;
+    position: relative;
 }
 ._1hp9ikc, ._3hmsj, ._kntyad {
 	text-align: center;
@@ -168,6 +170,9 @@ body {
 	background-color: #242b32;
 	position: relative;
 	flex: 0 0 auto !important;
+	left: 0;
+    bottom: 0;
+    width: 100%;
 }
 ._3hmsj:hover {
 	color: #fff!important;
@@ -236,7 +241,7 @@ button:hover>div>svg, button:hover>svg {
 	margin: 0!important
 }
 ._ucrqgx ._kntyad {
-	height: 53px!important;
+/*	height: 53px!important; */
 }
 ._1ijq51m {
 	padding: 0;
