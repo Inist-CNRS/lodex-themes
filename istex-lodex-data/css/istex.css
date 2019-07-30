@@ -253,7 +253,7 @@ button:hover>div>svg, button:hover>svg {
    min-height : 75px!important;
 }
 ._d8ev20 {
-   max-height : 33px!important ;
+   min-height : 33px!important ;
 }
 @media only screen and (max-width:646px) {
 	.property {
