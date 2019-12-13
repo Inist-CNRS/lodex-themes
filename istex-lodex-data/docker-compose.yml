@@ -5,7 +5,7 @@ services:
         container_name: istex-lodex-data
         build:
             context: .
-        image: istex-lodex-data:1.0.1
+        image: istex-lodex-data:1.0.2
         user: '${UID}:${GID}'
         environment:
             http_proxy: ${http_proxy}
