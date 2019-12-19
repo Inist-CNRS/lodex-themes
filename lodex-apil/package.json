@@ -1,7 +1,7 @@
 {
 	"private": true,
 	"name": "lodex-apil",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Lodex configured for APIL",
 	"scripts": {
 		"insertversion:readme": "sed -i \"s#\\(lodex-apil:\\)\\([\\.a-z0-9]\\+\\)#\\1${npm_package_version}#g\" README.md",
