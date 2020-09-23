@@ -1,7 +1,7 @@
 {
 	"private": true,
 	"name": "istex-lodex-data",
-	"version": "11.16.0",
+	"version": "11.16.0-fix",
 	"description": "Lodex configured for ISTEX",
 	"scripts": {
 		"insertversion:readme": "sed -i \"s#\\(istex-lodex-data:\\)\\([\\.a-z0-9]\\+\\)#\\1${npm_package_version}#g\" README.md",
