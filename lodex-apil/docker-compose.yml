@@ -5,7 +5,7 @@ services:
         container_name: lodex-apil
         build:
             context: .
-        image: lodex-apil:1.0.1
+        image: lodex-apil:11.16.3
         user: '${UID}:${GID}'
         environment:
             http_proxy: ${http_proxy}
