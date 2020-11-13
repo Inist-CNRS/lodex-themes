@@ -24,10 +24,10 @@ p {
     line-height: 2.2rem;
     margin: 0 0 10px;
 }
-.property_value h1 {
+.property_value h1, .header-resource-section h3 {
     background-color: #ab3e4e;
     font-weight: normal;
-    color: #fff;
+    color: #fff !important;
     margin: 0px;
     padding: 1rem 2rem 1rem 2rem;
 }
@@ -84,7 +84,8 @@ p {
 .graph-link svg {
     height: 60px !important;
     width: 60px !important;
-
+    color: #ab3e4e !important;    
+    fill: #ab3e4e !important;        
 }
 @media (min-width: 576px) {
     #tableau {
@@ -156,10 +157,10 @@ p {
 .fa-angle-right, .fa-angle-left {
     height: 72px;
     width: 36px;
-    color: #fff !important;
+    color: #ab3e4e !important;
 }
 .fa-angle-right:hover, .fa-angle-left:hover {
-    color: #b22f90 !important;
+    color: #CC949E !important;
 }
 .breadcrumb-root .fa-angle-right, .breadcrumb-root .fa-angle-left {
     height: 36px;
@@ -180,17 +181,6 @@ p {
 }
 .facets-listIte, .facet-value-list, .facet-value-list div div {
     color: #000 !important;
-}
-.header-resource-section {
-    margin-bottom: 2rem;
-    background-color: #FFCDB0!important;
-    border-radius: .3rem;
-    padding: 1rem;
-    font-weight: 500;
-}
-.header-resource-section h3 {
-    color: #000 !important;
-    font-size: 2.2rem;    
 }
 .breadcrumb-item-link:hover {
     color: #b22f90 !important;
@@ -261,4 +251,21 @@ footer ul {
 }
 #root  {
     box-shadow: 0 0 10px lightgrey;
+}
+.dialog-button,
+.export svg,
+.export,
+.graph-summary-icon,
+.graph-link,
+.searchbar-searchIcon,
+.searchbar-clearIcon,
+._1hjrvck,
+._g5glr1,
+.search-result-title,
+.search-result-description {
+    color: #ab3e4e!important;
+    fill: #ab3e4e!important;
+}
+.browse-result button {
+    background-color: #ab3e4e!important;
 }
