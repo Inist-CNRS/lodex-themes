@@ -8,7 +8,8 @@
 		"insertversion:makefile": "sed -i \"s#\\(istex-lodex-data:\\)\\([\\.a-z0-9]\\+\\)#\\1${npm_package_version}#g\" Makefile",
 		"insertversion:docker": "sed -i \"s#\\(istex-lodex-data:\\)\\([\\.a-z0-9]\\+\\)#\\1${npm_package_version}#g\" docker-compose*.yml",
 		"version": "npm run insertversion:readme && npm run insertversion:makefile && npm run insertversion:docker && git add README.md Makefile docker-compose.yml",
-		"postversion": "git push && git push --tags"
+		"postversion": "git push && git push --tags",
+		"build": "npm_package_version=${npm_package_version} make build"
 	},
 	"repository": {
 		"type": "git",
