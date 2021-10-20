@@ -7,7 +7,8 @@ help:
 
 build: ## build the docker image locally
 	@docker-compose -f ./docker-compose.yml build
-
+publish: build  ## publish version to docker hub
+	docker push inistcnrs/lodex-workers:${npm_package_version}
 run: ## to run locally
 	@docker-compose -f ./docker-compose.yml up
 
