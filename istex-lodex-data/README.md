@@ -2,7 +2,6 @@
 
 with docker
 
-    make build
-    make run
+    npm run publish
 
 or with [ezmaster](https://github.com/Inist-CNRS/ezmaster)
