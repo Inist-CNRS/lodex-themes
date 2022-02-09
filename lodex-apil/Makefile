@@ -11,3 +11,6 @@ build: ## build the docker image locally
 run: ## to run locally
 	@docker-compose -f ./docker-compose.yml up
 
+publish: build  ## publish version to docker hub
+	docker push inistcnrs/lodex-apil:12.21.0
+
