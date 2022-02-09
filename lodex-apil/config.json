@@ -1,0 +1,167 @@
+{
+	"mongo": {
+		"host": "lodex-database-1:27017"
+	},
+	"username": "admin",
+	"password": "secret",
+	"userAuth": {
+		"username": "user",
+		"password": "secret"
+	},
+	"#pluginsAPI": "http://lodex-extended:31976",
+	"pluginsURL": "https://raw.githubusercontent.com/Inist-CNRS/lodex-extended/v7.0.0/public/",
+	"enrichmentBatchSize": 100,
+	"routinesCache": false,
+	"routines": [
+		"all-documents",
+		"classif-by",
+		"count-all",
+		"count-by-fields",
+		"close-by",
+		"cross-by",
+		"decompose-by",
+		"distance-with",
+		"distinct-alpha-2-alpha3-from",
+		"distinct-alpha-3-alpha2-from",
+		"distinct-alpha-3-ISO3166-1-from",
+		"distinct-by-field",
+		"distinct-by",
+		"distinct-ISO3166-1-alpha2-from",
+		"distinct-ISO3166-1-alpha3-from",
+		"distinct-with-quote-rate",
+		"distribute-by-date",
+		"distribute-by-decadal",
+		"distribute-by-interval",
+		"graph-by",
+		"hello-world",
+		"pairing-with",
+		"unwind-by",
+		"select-by",
+		"syndication-from",
+		"syndication",
+		"total-of",
+		"tree-by",
+		"istex-facet",
+		"filter",
+		"sub-resources-asterplot",
+		"sub-resources-co-occurrences"
+	],
+	"loaders": [
+		"csv",
+		"csv-semicolon",
+		"csv-comma",
+		"tsv",
+		"tsv-double-quotes",
+		"tsv-wos",
+		"rdf",
+		"skos",
+		"json",
+		"json-conditor",
+		"json-import",
+		"json-istex",
+		"json-lodex",
+		"json-wordpress",
+		"json-datacite",
+		"json-inspirehep",
+		"rss",
+		"atom",
+		"mods",
+		"tei",
+		"xml",
+		"corpus",
+		"zip"
+	],
+	"exporters": [
+		"csv",
+		"tsv",
+		"jsonallvalue"
+	],
+	"datasetClass": "http://test.fr/datasetClass",
+	"schemeForDatasetLink": "http://www.w3.org/2004/02/skos/core#inScheme",
+	"exportDataset": "true",
+	"collectionClass": "",
+	"istexQuery": {
+		"labels": ["Cette ressource dans ISTEX"],
+		"linked": "categories.inist",
+		"context": {
+			"categories.inist": "istex:subjectInist",
+			"link": "dcterms:isPartOf"
+		}
+	},
+	"sparqlEndpoints": [
+		"https://lod.abes.fr/sparql",
+		"http://data.persee.fr/sparql/",
+		"https://data.istex.fr/sparql/",
+		"http://data.bnf.fr/sparql",
+		"http://dbpedia.org/sparql",
+		"http://fr.dbpedia.org/sparql",
+		"https://query.wikidata.org/sparql",
+		"http://www.lotico.com:3030/lotico/sparql"
+	],
+	"front": {
+		"breadcrumb": [],
+		"menu": [
+			{
+				"label": {
+					"en": "Home",
+					"fr": "Accueil"
+				},
+				"icon": "faHome",
+				"position": "left",
+				"role": "home"
+			},
+			{
+				"label": {
+					"en": "Graphs",
+					"fr": "Graphiques"
+				},
+				"icon": "faChartArea",
+				"position": "left",
+				"role": "graphs"
+			},
+			{
+				"label": {
+					"en": "Search",
+					"fr": "Recherche"
+				},
+				"icon": "faSearch",
+				"position": "left",
+				"role": "search"
+			},
+			{
+				"label": {
+					"en": "Admin",
+					"fr": "Admin"
+				},
+				"icon": "faCogs",
+				"position": "advanced",
+				"role": "admin"
+			},
+			{
+				"label": {
+					"en": "Sign in",
+					"fr": "Connexion"
+				},
+				"icon": "faSignInAlt",
+				"position": "advanced",
+				"role": "sign-in"
+			},
+			{
+				"label": {
+					"en": "Sign out",
+					"fr": "Déconnexion"
+				},
+				"icon": "faSignOutAlt",
+				"position": "advanced",
+				"role": "sign-out"
+			}
+		],
+		"advancedMenuButton": {
+			"label": {
+				"en": "More",
+				"fr": "Voir Plus"
+			},
+			"icon": "faBars"
+		}
+	}
+}
