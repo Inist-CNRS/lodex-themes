@@ -21,4 +21,4 @@ fi
 git tag "${NEW_VERSION}" -m "${NEW_VERSION}"
 git push --tags
 echo "Nouvelle version créée: ${NEW_VERSION}"
-echo "URL à utiliser: https://github.com/Inist-CNRS/lodex-themes/archive/refs/tags/${NAME_PACKAGE}@${NEW_VERSION}.zip"
+echo "URL à utiliser: https://github.com/Inist-CNRS/lodex-themes/archive/refs/tags/${NEW_VERSION}.zip"
