@@ -1,0 +1,325 @@
+/*lodex theme_inist 2*/
+/* fonts*/
+@import url("fonts/fonts-style.css");
+
+body {
+    font-family: 'Interstate Light';
+    background: url('../images/bg_services.jpg') repeat-x;
+    opacity: 1;
+    background-position: -400px 0;
+}
+
+/*header*/
+header {
+    background-color: transparent;
+}
+header > div {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 8em;
+    margin: auto auto;
+    font-family: 'Barlow Regular';
+    color: #FFF;
+    background-color: transparent;
+    opacity: 1;
+}
+header div#logos {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    max-width: 315px;
+    min-width: 270px;
+}
+header a {
+    color: #FFF;
+    text-decoration: none;
+}
+header a.logo {
+    margin: 0 .5em;
+    text-decoration: none;
+}
+header a:hover.logo,
+header a:focus.logo,
+header a:active.logo {
+    color: #FFF;
+}
+header a.logo:first-child {
+    height: 50px;
+    -webkit-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+.logoinist {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: normal;
+    margin: 0;
+    max-width: 259px;
+    color: #FFF;
+    font-size: .8125rem;
+}
+.logoinist > span:first-child {
+    font-family: 'Barlow Bold';
+    font-size: 1.875rem;
+}
+.logoinist > span:first-child::after {
+    content: '|';
+    font-family: 'Barlow Regular';
+    font-weight: normal;
+    opacity: 0.8;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.logoinist .inist {
+    font-weight: bold;
+}
+
+header h1 {
+    flex: 2;
+    font-size: 2em;
+    color: #FFF;
+    text-align: center;
+}
+
+/*footer*/
+footer {
+    margin-bottom: 90px;
+}
+.bt {
+    border-top: 1px solid rgba(170, 170, 170, .2);
+}
+footer ul.grille {
+    background-image: linear-gradient(90deg, rgba(170, 170, 170, .1) 1px, transparent 2px, transparent 99.8%);
+    background-size: 33% 1px;
+    margin-top: 0;
+}
+footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    margin: 5px auto;
+}
+footer ul li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 33%;
+    padding: 7px 30px;
+    height: 4em;
+    margin: 15px 0;
+}
+footer ul li a {
+    color: #434148;
+}
+footer li.bl3 {
+    border-left: 3px solid #23aeff;
+}
+footer #lodex {
+    display: flex;
+    align-items: center;
+}
+footer #lodex img {
+    height: 40px;
+}
+
+/* style container */
+#root {
+    padding: 0 2%;
+    background-color: #FBFBFB;
+    margin-bottom: 1em;
+} /*#FFF - #D4D3EA*/
+h1,
+h2 {
+    color: #14134F;
+    font-family: 'Interstate Regular';
+}
+#root div.body h1 {
+    padding: 0 0.5em;
+    border: 3px solid #832D63;
+    font-size: 2em;
+}
+#root div.body h2 {
+    font-size: 1.7em;
+}
+#root div.body div.property_label_container {
+    font-family: 'Interstate Italic';
+    color: #14134F !important;
+}
+#root div.body nav {
+    background-color: #E7F2F9 !important;
+    width: 100vw;
+    box-shadow: 0px -5px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* logo lodex transfere dans footer*/
+.header-dataset-section > div:last-child {
+    display: none;
+}
+nav img._1m2up2 {
+    display: none;
+}
+/*les titres des données en italic*/
+#root div.body .property_label {
+    font-family: 'Interstate LightItalic' !important;
+    color: #14134F !important;
+    font-size: 30px;
+}
+.MuiCardHeader-title {
+    font-family: 'Interstate ThinItalic' !important;
+    color: #14134F !important;
+    font-size: 30px;
+}
+
+/*recherche resulats */
+
+/* couleur boutons et liens */
+/* initial vert #7dbd42 devient bleu #0BA6B0 */
+/* active et focus orange #f48022 devient cerise #ed3d72 */
+/* hover violet reste violet #b22f90*/
+/* boutton:hover bleu fonce #14134F*/
+
+
+/* element a en bouton , button */
+/* voir les details, exporter */
+.MuiButton-textPrimary,
+.MuiIconButton-colorPrimary {
+    color: #0BA6B0 !important;
+}
+
+.MuiFab-primary,
+.MuiButton-containedPrimary {
+    color: #fff;
+    background-color: #0BA6B0 !important;
+}
+.MuiFab-primary:hover,
+.MuiButton-containedPrimary:hover {
+    color: #fff;
+    background-color: #14134F !important;
+}
+/* filtres checked */
+.MuiCheckbox-colorSecondary.Mui-checked {
+    color: #ed3d72 !important;
+}
+
+/*element a*/
+/* nav barre menu et burger lodex svg._1alyjjs*/
+#root div.body ._1alyjjs {
+    color: #0BA6B0 !important;
+}
+/*._wvpt9r equivaut a ._1alyjjs:active*/
+#root div.body ._wvpt9r,
+#root div.body ._wvpt9r:hover,
+#root div.body ._wvpt9r:active,
+#root div.body ._wvpt9r:focus {
+    color: #ed3d72 !important;
+}
+/* ._1ccr4zz fixe ._1alyjjs:hover*/
+#root div.body ._1ccr4zz,
+#root div.body ._1alyjjs:hover {
+    color: #b22f90 !important;
+}
+/* il reste violet */
+
+/* svg recherche : lancer, filtrer - detail icone suivant precedent */
+svg._g5glr1,
+svg._1hjrvck,
+svg._1r5a9s9 {
+    color: #0BA6B0 !important;
+}
+.searchbar-clear svg._g5glr1 {
+    color: #ed3d72 !important;
+}
+/*sous menu graphiques */
+#root div.body ._1j0pxga {
+    background-color: #f8f8f8 !important;
+    fill: #0BA6B0 !important;
+    color: #0BA6B0 !important;
+}
+#root div.body ._1j0pxga:hover {
+    text-decoration: none;
+    fill: #b22f90;
+    color: #b22f90;
+}
+/* active orange devient rouge */
+#root div.body ._1j0pxga:focus,
+#root div.body ._1j0pxga:active {
+    color: #ed3d72 !important;
+    fill: #ed3d72 !important;
+}
+/* liste des resultats */
+#root div.body ._1slu1mr {
+    color: #0BA6B0 !important;
+}
+#root div.body ._1slu1mr:hover {
+    color: #14134F !important;
+}
+
+
+/* header div et footer ul : idem .container */
+header > div,
+footer ul {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* adaptative charte */
+@media only screen and (max-width : 980px) {
+    .logoinist span.inist {
+        font-size: .6rem;
+        font-weight: 700;
+    }
+}
+
+@media (min-width : 576px) {
+    body {
+        background-position: -750px 0;
+    }
+    header > div,
+    footer ul {
+        max-width: 540px;
+    }
+
+}
+
+@media (min-width : 768px) {
+    body {
+        background-position: -700px 0;
+    }
+    header > div,
+    footer ul {
+        max-width: 720px;
+    }
+}
+
+@media (min-width : 992px) {
+    body {
+        background-position: -600px 0;
+    }
+    header > div,
+    footer ul {
+        max-width: 960px;
+    }
+}
+
+@media (min-width : 1200px) {
+    body {
+        background-position: -400px 0;
+    }
+    header > div,
+    footer ul {
+        max-width: 1140px;
+    }
+}
+
