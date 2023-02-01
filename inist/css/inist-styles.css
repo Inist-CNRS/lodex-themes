@@ -31,6 +31,7 @@ header div#logos {
     align-items: start;
     max-width: 315px;
     min-width: 270px;
+    background-color: #17004e;
 }
 header a {
     color: #FFF;
@@ -123,7 +124,7 @@ footer ul li a {
     color: #434148;
 }
 footer li.bl3 {
-    border-left: 3px solid #23aeff;
+    border-left: 3px solid #00acb2;
 }
 footer #lodex {
     display: flex;
