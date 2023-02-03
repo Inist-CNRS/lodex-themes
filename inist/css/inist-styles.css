@@ -258,14 +258,11 @@ svg._1r5a9s9 {
     color: #ed3d72 !important;
     fill: #ed3d72 !important;
 }
-/* liste des resultats */
-#root div.body ._1slu1mr {
-    color: #0BA6B0 !important;
+/* page graphique */
+.graph-results span.MuiCardHeader-title {
+  font-size: 1rem !important;
+  font-weight: inherit !important;
 }
-#root div.body ._1slu1mr:hover {
-    color: #14134F !important;
-}
-
 
 /* header div et footer ul : idem .container */
 header > div,
