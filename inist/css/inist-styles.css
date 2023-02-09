@@ -146,9 +146,7 @@ h2 {
     font-family: 'Interstate Regular';
 }
 #root div.body h1 {
-    padding: 0 0.5em;
-    border: 3px solid #832D63;
-    font-size: 2em;
+    font-size: 2.2em;
 }
 #root div.body h2 {
     font-size: 1.7em;
