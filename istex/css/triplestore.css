@@ -111,8 +111,8 @@
     min-width: 500px;
     width: 50vw;
     border: 1px solid #242b32;
-    background: url(/img/BG_ISTEX_LIGHT_DESKTOP.jpg) center repeat;
     color: #242b32;
+    background-color: #fff;
     border-radius: 7px;
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
     transform: translateY(-25vh);
