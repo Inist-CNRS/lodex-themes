@@ -1,7 +1,7 @@
 # Lodex 12.55.2 theme INIST
 
 Ce répertoire contient [LODEX](https://github.com/Inist-CNRS/lodex)'s theme inist,
-dont l'usage est exclusivement réservé à l'institution inist-cnrs lorsqu'elle publie ou livre ses services via lodex.
+dont l'**usage est exclusivement réservé à l'institution inist-cnrs** lorsqu'elle publie ou livre ses services via lodex.
 
 ```txt
 
