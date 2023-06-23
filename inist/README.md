@@ -1,7 +1,7 @@
 # Lodex 12.55.2 theme INIST
 
-    Ce répertoire contient [LODEX](https://github.com/Inist-CNRS/lodex)'s theme inist,
-    dont l'**usage est exclusivement réservé à l'institution inist-cnrs** lorsqu'elle publie ou livre ses services via lodex.
+  Ce répertoire contient [LODEX](https://github.com/Inist-CNRS/lodex)'s theme inist,
+  dont l'**usage est exclusivement réservé à l'institution inist-cnrs** lorsqu'elle publie ou livre ses services via lodex.
 
 ```txt
 
@@ -22,38 +22,40 @@
 
 ## Optimisation de l'utilisation lodex theme inist
 
-### Elements créés depuis l'admin utilisés par lodex ou stylés par css le titre - la description
+### Titre - Description
 
-  #### Titre de l'étude
+Elements créés depuis l'admin et utilisés par lodex et/ou stylés par css 
 
-    - renseigné via Admin/Affichage/Page d'accueil/page/
-    - création d'un nouveau champ :
-      Onglet Général / valeur arbitraire / saisie du titre
-      Onglet Affichage / visible format texte/titre/h1
+#### Titre de l'étude
 
-    > **Attention** ne pas indiquer de largeur !
+- renseigné via Admin/Affichage/Page d'accueil/page/
+- création d'un nouveau champ :
+  Onglet Général / valeur arbitraire / saisie du titre
+  Onglet Affichage / visible format texte/titre/h1
 
-    > **conseil pour page d'accueil**
-    >
-    > - titre h1 = titre résumé de l'étude repris dans breadcrumb
-    > - titre h2 = titre long de l'étude
+> **Attention** ne pas indiquer de largeur !
+
+> **conseil pour page d'accueil**
+>
+> - titre h1 = titre résumé de l'étude repris dans breadcrumb
+> - titre h2 = titre long de l'étude
 
 #### Description du corpus
 
-  - renseigné via Admin/Affichage/Page d'accueil/page/
-  - création d'un nouveau champ :
-    Onglet Général / valeur arbitraire / saisie du titre
-    Onglet Affichage / visible format texte/paragraphe
+- renseigné via Admin/Affichage/Page d'accueil/page/
+- création d'un nouveau champ :
+  Onglet Général / valeur arbitraire / saisie du titre
+  Onglet Affichage / visible format texte/paragraphe
 
 #### meta balise head/title
 
   - renseignée via Admin/Affichage/Page d'accueil/page/DATASET - Titre
-  - reprendre champs titre créé pour Page d'accueil
+  - reprise champs titre créé pour Page d'accueil
 
 #### meta balise head/description
 
   - renseignée via Admin/Affichage/Page d'accueil/page/DATASET - Description
-  - reprende champ description crée pour page d'accueil
+  - reprise du champ description crée pour page d'accueil
 
 ## settings (ezmaster) / les différents menu
 
