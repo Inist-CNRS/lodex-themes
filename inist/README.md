@@ -1,7 +1,7 @@
 # Lodex 12.55.2 theme INIST
 
-Ce répertoire contient [LODEX](https://github.com/Inist-CNRS/lodex)'s theme inist,
-dont l'**usage est exclusivement réservé à l'institution inist-cnrs** lorsqu'elle publie ou livre ses services via lodex.
+    Ce répertoire contient [LODEX](https://github.com/Inist-CNRS/lodex)'s theme inist,
+    dont l'**usage est exclusivement réservé à l'institution inist-cnrs** lorsqu'elle publie ou livre ses services via lodex.
 
 ```txt
 
@@ -13,91 +13,111 @@ dont l'**usage est exclusivement réservé à l'institution inist-cnrs** lorsqu'
 
 ```
 
-# Optimisation d'utilisation lodex theme inist
+## Documentation du theme Inist
 
-## le titre - la description
+    Cette documentation est à l'usage de :
 
-### meta balise head/title
+    1. la maintenance de ce theme préparé pour la version 12.55.2 de Lodex
+    2. la réalisation par les créateurs d'instance lodex pour le compte de l'inist-cnrs
 
-- renseignée via Admin/Affichage/Page d'accueil/page/DATASET - Titre
-- reprendre champs titre créé pour Page d'accueil
+## Optimisation de l'utilisation lodex theme inist
 
-### meta balise head/description
+### Elements créés depuis l'admin utilisés par lodex ou stylés par css le titre - la description
 
-- renseignée via Admin/Affichage/Page d'accueil/page/DATASET - Description
-- reprende champ description crée pour page d'accueil
+  #### Titre de l'étude
 
-### Titre de l'étude
+    - renseigné via Admin/Affichage/Page d'accueil/page/
+    - création d'un nouveau champ :
+      Onglet Général / valeur arbitraire / saisie du titre
+      Onglet Affichage / visible format texte/titre/h1
 
-- renseigné via Admin/Affichage/Page d'accueil/page/
-- création d'un nouveau champ :
-  -- Onglet Général / valeur arbitraire / saisie du titre
-  -- Onglet Affichage / visible format texte/titre/h1
+    > **Attention** ne pas indiquer de largeur !
 
-> **Attention** ne pas indiquer de largeur !
+    > **conseil pour page d'accueil**
+    >
+    > - titre h1 = titre résumé de l'étude repris dans breadcrumb
+    > - titre h2 = titre long de l'étude
 
-### Description du corpus
+#### Description du corpus
 
-- renseigné via Admin/Affichage/Page d'accueil/page/
-- création d'un nouveau champ :
-  Onglet Général / valeur arbitraire / saisie du titre
-  Onglet Affichage / visible format texte/paragraphe
+  - renseigné via Admin/Affichage/Page d'accueil/page/
+  - création d'un nouveau champ :
+    Onglet Général / valeur arbitraire / saisie du titre
+    Onglet Affichage / visible format texte/paragraphe
+
+#### meta balise head/title
+
+  - renseignée via Admin/Affichage/Page d'accueil/page/DATASET - Titre
+  - reprendre champs titre créé pour Page d'accueil
+
+#### meta balise head/description
+
+  - renseignée via Admin/Affichage/Page d'accueil/page/DATASET - Description
+  - reprende champ description crée pour page d'accueil
 
 ## settings (ezmaster) / les différents menu
 
-### breadcrumb
+#### breadcrumb
 
-doit contenir au minimum le titre de l'étude
+  doit contenir au minimum le titre de l'étude
 
-**conseil**
-exemple :
+  > **conseil**
+  >
+  > 1. ajouter contact : url du formulaire de l'équipe site inist.fr
+  > 2. ajouter mentions légales : url mentions légales site inist.fr
 
-1. ajouter contact : renvoie sur le formulaire de l'équipe site inist.fr
-2. ajouter mentions légales : url mentions légales site inist.fr
+  La css prévoit l'ajout d'une icône 'lien externe' pour les urls hors de l'instance lodex
 
-la css prévoit l'ajout d'une icône 'lien externe' pour les urls hors de l'instance lodex
+#### menu advanced
+  
+  Des pages statiques sont à votre disposition dans le theme :
 
-### men**remarque**u advanced
-
-des pages statiques sont à votre disposition dans le theme
-
-1. ajout possible de l'url interne pour la page methodologie.html du theme
-2. ajout possible de l'url interne pour la page contact.html du theme
-3. ajout possible de l'url interne pour la page documentation.html du theme (documentation lodex)
+    1. ajout possible de l'url interne pour la page methodologie\.html du theme
+    2. ajout possible de l'url interne pour la page contact\.html du theme
+    3. ajout possible de l'url interne pour la page documentation\.html du theme (documentation lodex)
 
 ## Charte inist et Lodex
 
-Des class css sont disponibles dans inist-style.css
+  Des class css sont disponibles dans inist-style.css
 
-insérer ici
+  //insérer class
 
-Des éléments lodex sont stylés selon charte INIST
-**remarque** ceci n'est qu'une proposition et peut-être modifié
+  Des éléments lodex sont stylés selon charte INIST :
 
-inséré liste des éléments lodex colorisés ou stylés bordure couleur
+  > **remarque** ceci n'est qu'une proposition et peut-être modifié
 
-## colorTheme
+  //inséré liste des éléments lodex colorisés ou stylés bordure couleur
 
-[ezMaster](https://github.com/Inist-CNRS/ezmaster) is an administration tool
-within which you can run multiple instances of `lodex`.
+## Description de custom/css/inist-styles.css
 
-You can upload a theme by manually uploading all files and directories of a
-theme to `ezMaster`.
+  //insérer description
 
-Or you can use the `upload.py` script in conjunction with the `ezMaster`'s WebDAV
-URL to do it more simply.
+## custom : description et usage des autres fichiers
 
-> **Requirements**: you need to have Python installed, and the `cadaver` package
-> (in Ubuntu, a simple `sudo apt install cadaver` will install it).
+### custom/ colorTheme.js et customTheme.js
 
-For example, if you want to upload `ISTEX` theme to an instance of `lodex`
-running in an `ezmaster`, use:
+  Nouveauté lodex 12.55 : colorTheme.js permet de déclarer les couleurs icônes et textes du lodex
 
-```bash
-lodex-themes$ ./upload.py ISTEX dav://host.domain.org:35267/wd--lodex-instance
-```
+  Le code de Lodex ne prend en compte ce fichier de déclaration couleur que pour certains de ses composants.
+  C'est pourquoi pour la version lodex 12.55.2, des feuilles de style spécifiques surchargent les composants non pris en compte et stylables par class css.
 
-In this example, `lodex-themes` is the clone directory,
-`dav://host.domain.org:35267/wd--lodex-instance` is the WebDAV URL for an
-instance of `lodex` named `lodex-instance`, hosted on `host.domain.org` where
-`ezmaster` is running, on port 35267. The WebDAV URL can be found in the upload window of an instance in `ezmaster`.
+  **remarque** le fichier customTheme.js reprend les déclarations de colorTheme.js et n'est pas à modifier
+
+### custom/css/
+
+        //insere liste
+
+#### custom/css/fonts
+
+### custom/img
+
+  Ce répertoire contient :
+
+  1. le logo version blanche du logo CNRS
+  2. Deux familles d'images de fonds sont à votre disposition, repris du site inist\.fr
+
+    - projet
+    - qui
+
+  3. icone svg lien externe pour breacrumb (inséré via css)
+
