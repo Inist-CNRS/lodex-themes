@@ -3,7 +3,7 @@
   Ce répertoire contient [LODEX](https://github.com/Inist-CNRS/lodex)'s theme inist,
   dont l'**usage est exclusivement réservé à l'institution inist-cnrs** lorsqu'elle publie ou livre ses services via lodex.
 
-```txt
+```
 
 ├── inist
 │   └── css
@@ -22,9 +22,7 @@
 
 ## Optimisation de l'utilisation lodex theme inist
 
-### Titre - Description
-
-Elements créés depuis l'admin et utilisés par lodex et/ou stylés par css 
+### 1. Elements créés depuis l'admin et utilisés par lodex et/ou stylés par css 
 
 #### Titre de l'étude
 
@@ -57,9 +55,11 @@ Elements créés depuis l'admin et utilisés par lodex et/ou stylés par css
   - renseignée via Admin/Affichage/Page d'accueil/page/DATASET - Description
   - reprise du champ description crée pour page d'accueil
 
-## settings (ezmaster) / les différents menu
+### 2.settings (ezmaster) / les différents menu
 
-#### breadcrumb
+fichier settings_lodex_theme_Inist.json exemple dans custom/
+
+### breadcrumb
 
   doit contenir au minimum le titre de l'étude
 
@@ -78,21 +78,114 @@ Elements créés depuis l'admin et utilisés par lodex et/ou stylés par css
     2. ajout possible de l'url interne pour la page contact\.html du theme
     3. ajout possible de l'url interne pour la page documentation\.html du theme (documentation lodex)
 
-## Charte inist et Lodex
+## 3. Charte inist et Lodex
 
-  Des class css sont disponibles dans inist-style.css
+###  Des class css sont disponibles dans inist-style.css
 
-  //insérer class
+```bash
+  .bl3 {
+  border-left: 3px solid #23aeff;
+  padding-left: 30px;
+}
+.tiret::before,
+.static-page h2::before,
+.date::before {
+  content: "—";
+  padding-right: 20px;
+  font-weight: bold;
+}
+.bb {
+  border-bottom: 1px solid rgba(170, 170, 170, 0.2);
+}
+.bt {
+  border-top: 1px solid rgba(170, 170, 170, 0.2);
+}
+/*fond rose*/
+.bg {
+  background-color: rgba(229, 229, 229, 0.17);
+}
+/*a "voir plus" charte inist */
+a.VoirPlus {
+  color: #434148;
+  margin: 15px 0 15px 0;
+  padding: 15px 20px;
+  background-color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #23aeff;
+  width: max-content;
+}
+a.VoirPlus:hover,
+a.VoirPlus:focus {
+  box-shadow: 0px 0px 0px 1px #23aeff;
+}
+```
 
-  Des éléments lodex sont stylés selon charte INIST :
+###  Des éléments lodex sont stylés selon charte INIST :
 
   > **remarque** ceci n'est qu'une proposition et peut-être modifié
 
-  //inséré liste des éléments lodex colorisés ou stylés bordure couleur
+```bash
+/*home label avec un tiret*/
+.header-dataset-section div .property_label::before {
+  content: "—";
+  padding-right: 20px;
+  font-weight: bold;
+}
+/*resource titres champs*/
+div.resource .property_label {
+  font-size: 1rem !important;
+  border-bottom: 1px dotted rgb(224, 224, 224);
+}
+/*annotation bt bb bl3*/
+.linked_fields {
+  border-top: 1px solid rgba(170, 170, 170, 0.2) !important;
+  border-left: 3px solid #23aeff !important;
+  border-bottom: 1px solid rgba(170, 170, 170, 0.2) !important;
+  padding-left: 30px !important;
+}
+.linked_fields h2 {
+  border-left: none;
+  margin-left: 0 !important;
+}
+.linked_fields a.VoirPlus {
+  display: block;
+  margin: 0 auto;
+}
+ /*ul charte inist ?*/
+.resources-grid-list {
+  background-color: rgba(229, 229, 229, 0.17);
+}
+```
 
-## Description de custom/css/inist-styles.css
+## Structure de custom/css/inist-styles.css
 
-  //insérer description
+```bash
+/*lodex theme_inist 2*/
+/* fonts*/
+@import url("fonts-style.css");
+/*class css couleurs*/
+/* -> declaration dans colorsTheme.js, custom/css/ styles_aphrodite, css-loader.css*/
+/*initial vert #7dbd42 devient bleu #25809a ou rgb(37, 128, 154)*/ /*#06bad6 ko contrast*/
+/*green:{ primary: "#25809a",
+secondary: "rgba(37, 128, 154, 1.5)",
+tertiary: "rgba(37, 128, 154, .5)",
+light: "rgba(37, 128, 154, .1)",
+}*/
+/*orange #f48022 devient fushia #da1d64 (active et focus)*/
+/* hover violet reste violet #b22f90*/
+@import url("styles_aphrodite.css");
+/*bouton vert ‘plus de résultats' et bouton vert 'parcourir les résultats'*/
+/* (deviennent bleu et bleu foncé) uniquement par class css-xxxxx rgb(31, 106, 129)*/
+@import url("css-loader.css");
+/*reprise de style.css lodex appel supprime*/
+
+/* MOBILE FIRST*/
+/* adaptative charte : cf site inist/inist.css*/
+/*tout type media, equiv a4*/
+@media (min-width: 794px) {}
+```
 
 ## custom : description et usage des autres fichiers
 
