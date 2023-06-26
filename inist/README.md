@@ -210,7 +210,7 @@ light: "rgba(37, 128, 154, .1)",
 
   Ce répertoire contient :
 
-  1. le logo version blanche du logo CNRS
+  1. le logo version blanche du logo CNRS https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/images/logo_cnrs_2019_blanc.svg
   2. Deux familles d'images de fonds sont à votre disposition, repris du site inist\.fr
 
     - projet
