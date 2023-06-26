@@ -51,12 +51,12 @@
 #### meta balise head/title
 
   - renseignée via Admin/Affichage/Page d'accueil/page/DATASET - Titre
-  -> sélectionner champs titre créé pour Page d'accueil
+  - -> sélectionner champs titre créé pour Page d'accueil
 
 #### meta balise head/description
 
   - renseignée via Admin/Affichage/Page d'accueil/page/DATASET - Description
-  -> sélectionner champ description crée pour page d'accueil
+  - -> sélectionner champ description crée pour page d'accueil
 
 ### 2.settings (ezmaster) / les différents menu
 
