@@ -10,8 +10,9 @@
 │   └── css
 │       └── fonts
 │   └── img
-fichiers documentation
+│ fichiers documentation
 │  settings_lodex_theme_Inist.json
+│  README.md
 
 ```
 
