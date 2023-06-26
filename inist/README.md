@@ -51,16 +51,16 @@
 #### meta balise head/title
 
   - renseignée via Admin/Affichage/Page d'accueil/page/DATASET - Titre
-  - reprise champs titre créé pour Page d'accueil
+  -> sélectionner champs titre créé pour Page d'accueil
 
 #### meta balise head/description
 
   - renseignée via Admin/Affichage/Page d'accueil/page/DATASET - Description
-  - reprise du champ description crée pour page d'accueil
+  -> sélectionner champ description crée pour page d'accueil
 
 ### 2.settings (ezmaster) / les différents menu
 
-fichier settings_lodex_theme_Inist.json exemple dans custom/
+je vous ai mis un fichier settings_lodex_theme_Inist.json en exemple dans inist/
 
 ### breadcrumb
 
@@ -77,22 +77,24 @@ fichier settings_lodex_theme_Inist.json exemple dans custom/
   
   Des pages statiques sont à votre disposition dans le theme :
 
-    1. ajout possible de l'url interne pour la page methodologie\.html du theme
-    2. ajout possible de l'url interne pour la page contact\.html du theme
-    3. ajout possible de l'url interne pour la page documentation\.html du theme (documentation lodex)
+    1. ajout possible de l'url interne pour la page  : methodologie\.html
+    2. ajout possible de l'url interne pour la page  : contact\.html
+    3. ajout possible de l'url interne pour la page de documentation lodex : documentation\.html 
+
+  > **remarque** je peux en préparer d'autres si nécessaire
 
 ## 3. Charte inist et Lodex
 
 ###  Des class css sont disponibles dans inist-style.css
+
+  > **remarque** vous pouvez utiliser ces class lorsque vous créer des éléments html depuis l'admin
 
 ```bash
   .bl3 {
   border-left: 3px solid #23aeff;
   padding-left: 30px;
 }
-.tiret::before,
-.static-page h2::before,
-.date::before {
+.static-page h2::before {
   content: "—";
   padding-right: 20px;
   font-weight: bold;
@@ -107,7 +109,7 @@ fichier settings_lodex_theme_Inist.json exemple dans custom/
 .bg {
   background-color: rgba(229, 229, 229, 0.17);
 }
-/*a "voir plus" charte inist */
+/*a "voir plus" charte inist*/
 a.VoirPlus {
   color: #434148;
   margin: 15px 0 15px 0;
@@ -130,18 +132,18 @@ a.VoirPlus:focus {
   > **remarque** ceci n'est qu'une proposition et peut-être modifié
 
 ```bash
-/*home label avec un tiret*/
+/*page accueil : label avec un tiret*/
 .header-dataset-section div .property_label::before {
   content: "—";
   padding-right: 20px;
   font-weight: bold;
 }
-/*resource titres champs*/
+/*page resource : titres champs*/
 div.resource .property_label {
   font-size: 1rem !important;
   border-bottom: 1px dotted rgb(224, 224, 224);
 }
-/*annotation bt bb bl3*/
+/*toute page : annotation bt bb bl3*/
 .linked_fields {
   border-top: 1px solid rgba(170, 170, 170, 0.2) !important;
   border-left: 3px solid #23aeff !important;
@@ -156,66 +158,37 @@ div.resource .property_label {
   display: block;
   margin: 0 auto;
 }
- /*ul charte inist ?*/
+ /*toute page : liste ul charte inist ?*/
 .resources-grid-list {
   background-color: rgba(229, 229, 229, 0.17);
 }
-```
-
-## Structure de custom/css/inist-styles.css
-
-```bash
-/*lodex theme_inist 2*/
-/* fonts*/
-@import url("fonts-style.css");
-/*class css couleurs*/
-/* -> declaration dans colorsTheme.js, custom/css/ styles_aphrodite, css-loader.css*/
-/*initial vert #7dbd42 devient bleu #25809a ou rgb(37, 128, 154)*/ /*#06bad6 ko contrast*/
-/*green:{ primary: "#25809a",
-secondary: "rgba(37, 128, 154, 1.5)",
-tertiary: "rgba(37, 128, 154, .5)",
-light: "rgba(37, 128, 154, .1)",
-}*/
-/*orange #f48022 devient fushia #da1d64 (active et focus)*/
-/* hover violet reste violet #b22f90*/
-@import url("styles_aphrodite.css");
-/*bouton vert ‘plus de résultats' et bouton vert 'parcourir les résultats'*/
-/* (deviennent bleu et bleu foncé) uniquement par class css-xxxxx rgb(31, 106, 129)*/
-@import url("css-loader.css");
-/*reprise de style.css lodex appel supprime*/
-
-/* MOBILE FIRST*/
-/* adaptative charte : cf site inist/inist.css*/
-/*tout type media, equiv a4*/
-@media (min-width: 794px) {}
 ```
 
 ## custom : description et usage des autres fichiers
 
 ### custom/ colorTheme.js et customTheme.js
 
-  Nouveauté lodex 12.55 : colorTheme.js permet de déclarer les couleurs icônes et textes du lodex
+  Nouveauté lodex 12.55 : pour votre information, colorsTheme.js permet de déclarer les couleurs icônes et textes du lodex
+  
+  > https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/colorsTheme.js
 
-  Le code de Lodex ne prend en compte ce fichier de déclaration couleur que pour certains de ses composants.
+  Mais le code de Lodex ne prend en compte ce fichier de déclaration couleur que pour certains de ses composants.
   C'est pourquoi pour la version lodex 12.55.2, des feuilles de style spécifiques surchargent les composants non pris en compte et stylables par class css.
 
-  **remarque** le fichier customTheme.js reprend les déclarations de colorTheme.js et n'est pas à modifier
+  > https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/css/css-loader.css
+  > https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/css/styles_aphrodite.css
 
-### custom/css/
-
-        //insere liste
-
-#### custom/css/fonts
+  > **remarque** ces fichiers ne doivent pas être modifier
 
 ### custom/img
 
   Ce répertoire contient :
 
   1. le logo version blanche du logo CNRS https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/images/logo_cnrs_2019_blanc.svg
-  2. Deux familles d'images de fonds sont à votre disposition, repris du site inist\.fr
+  2. Deux familles d'images de fonds sont à votre disposition, repris du site inist\.fr : https://github.com/Inist-CNRS/lodex-themes/tree/master/inist/images
 
-    - projet
-    - qui
+    - projet https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/images/bg_projets.jpg
+    - qui https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/images/bg_qui.jpg
 
-  3. icone svg lien externe pour breacrumb (inséré via css)
+  3. icone svg lien externe pour breacrumb (inséré via css) mettre à jour quand validation maquette
 
