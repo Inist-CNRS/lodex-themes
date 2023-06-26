@@ -58,9 +58,9 @@
   - renseignée via Admin/Affichage/Page d'accueil/page/DATASET - Description
   - -> sélectionner champ description crée pour page d'accueil
 
-### 2.settings (ezmaster) / les différents menu
+### 2. settings (ezmaster) / les différents menu
 
-je vous ai mis un fichier settings_lodex_theme_Inist.json en exemple dans inist/
+> ***remarque*** *je vous ai mis un fichier settings_lodex_theme_Inist.json en exemple dans inist/*
 
 ### breadcrumb
 
@@ -87,7 +87,7 @@ je vous ai mis un fichier settings_lodex_theme_Inist.json en exemple dans inist/
 
 ###  Des class css sont disponibles dans inist-style.css
 
-  > **remarque** vous pouvez utiliser ces class lorsque vous créer des éléments html depuis l'admin
+  > ***remarque*** *vous pouvez utiliser ces class lorsque vous créer des éléments html depuis l'admin*
 
 ```bash
   .bl3 {
@@ -129,7 +129,7 @@ a.VoirPlus:focus {
 
 ###  Des éléments lodex sont stylés selon charte INIST :
 
-  > **remarque** ceci n'est qu'une proposition et peut-être modifié
+  > ***remarque*** *ceci n'est qu'une proposition et peut-être modifié*
 
 ```bash
 /*page accueil : label avec un tiret*/
@@ -168,7 +168,7 @@ div.resource .property_label {
 
 ### custom/ colorTheme.js et customTheme.js
 
-  Nouveauté lodex 12.55 : pour votre information, colorsTheme.js permet de déclarer les couleurs icônes et textes du lodex
+  **Nouveauté lodex 12.55** : pour votre information, colorsTheme.js permet de déclarer les couleurs icônes et textes du lodex
   
   > https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/colorsTheme.js
 
@@ -178,7 +178,7 @@ div.resource .property_label {
   > https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/css/css-loader.css
   > https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/css/styles_aphrodite.css
 
-  > **remarque** ces fichiers ne doivent pas être modifier
+  > ***remarque*** *ces fichiers ne doivent pas être modifier*
 
 ### custom/img
 
