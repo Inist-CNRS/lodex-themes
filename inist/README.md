@@ -64,7 +64,10 @@
 
 ### breadcrumb
 
-  doit contenir au minimum le titre de l'étude
+  doit contenir au minimum le titre court de l'étude, texte identique au h1 indiqué ci-dessus
+  
+> **Important** cet élément est stylé à l'identique du h1 dans [inist-styles.css](https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/css/inist-styles.css)
+  
 
   > **conseil**
   >
@@ -175,8 +178,8 @@ div.resource .property_label {
   Mais le code de Lodex ne prend en compte ce fichier de déclaration couleur que pour certains de ses composants.
   C'est pourquoi pour la version lodex 12.55.2, des feuilles de style spécifiques surchargent les composants non pris en compte et stylables par class css.
 
-  > https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/css/css-loader.css
-  > https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/css/styles_aphrodite.css
+  > [css-loader.css](https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/css/css-loader.css)
+  > [styles_aphrodite.css](https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/css/styles_aphrodite.css=
 
   > ***remarque*** *ces fichiers ne doivent pas être modifier*
 
@@ -184,11 +187,13 @@ div.resource .property_label {
 
   Ce répertoire contient :
 
-  1. le logo version blanche du logo CNRS https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/images/logo_cnrs_2019_blanc.svg
-  2. Deux familles d'images de fonds sont à votre disposition, repris du site inist\.fr : https://github.com/Inist-CNRS/lodex-themes/tree/master/inist/images
+  1. le logo version blanche du [logo CNRS](https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/img/logo_cnrs_2019_blanc.svg]
+  2. l'icone svg lien externe pour breacrumb (inséré via css) *** mettre à jour quand validation maquette ***
+  3. Deux familles d'images de fonds sont à votre disposition, repris du site inist\.fr mettre url
+    - [projets](https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/img/bg_projets.jpg)
+    - [qui](https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/img/bg_qui.jpg)
 
-    - projet https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/images/bg_projets.jpg
-    - qui https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/images/bg_qui.jpg
+Pour ces dernières, les images 'projets' sont utilisées par défaut
 
-  3. icone svg lien externe pour breacrumb (inséré via css) mettre à jour quand validation maquette
-
+Si vous souhaitez utiliser les fonds qui, voici comment faire :
+*** mettre à jour quand validation maquette *** 
