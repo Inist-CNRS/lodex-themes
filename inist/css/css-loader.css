@@ -1,7 +1,15 @@
 /*class css generees par css-loader dans index.js?*/
 /* justification des titres annulée*/
 .css-oa9bdm {
-  text-align: inherit!important;
+  text-align: inherit !important;
+}
+/*moins d'espace entre les blocs home et resource*/
+div.header-dataset-section
+  div.format_title
+  .property_value_container
+  .css-oa9bdm,
+.MuiBox-root.css-1ngt2jr {
+  padding: 0px !important;
 }
 /* -> declaration dans colorsTheme.js, custom/css/ styles_aphrodite et css-loader.css*/
 /*initial vert #7dbd42 devient bleu #25809a ou rgb(37, 128, 154)*/
@@ -12,24 +20,65 @@ light: "rgba(37, 128, 154, .1)",
 }*/
 /*active et focus orange #f48022 devient fushia #da1d64*/
 /* hover violet reste violet #b22f90*/
-
 /* boutton:hover bleu fonce #1f6a81 rgb(31, 106, 129)*/
+/*page login*/
+/*label*/
+.css-14hm2es.Mui-focused {
+  color: rgb(31, 106, 129) !important;
+}
+/*div input*/
+.css-1gc10f1::after {
+  border-bottom: 2px solid rgb(31, 106, 129) !important;
+}
 /*home page : bouton vert ‘plus de résultats'*/
-.css-aasjfl {background-color: rgb(37, 128, 154)!important;}
-.css-aasjfl:hover {background-color: rgb(31, 106, 129)!important;}
+.css-aasjfl {
+  background-color: rgb(37, 128, 154) !important;
+}
+.css-aasjfl:hover {
+  background-color: rgb(31, 106, 129) !important;
+}
 /*pages modales des graphiques : bouton vert 'parcourir les résultats'*/
-.css-1fzg62x {background-color: rgb(37, 128, 154)!important;}
-.css-1fzg62x:hover {background-color: rgb(31, 106, 129)!important;}
+.css-1fzg62x {
+  background-color: rgb(37, 128, 154) !important;
+}
+.css-1fzg62x:hover {
+  background-color: rgb(31, 106, 129) !important;
+}
 /*boite recherche*/
+/*focus fieldset recherche*/
+.css-1ne2wwb.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: rgb(31, 106, 129) !important;
+}
 /*bouton fond blanc ‘voir plus de résultats'*/
-.css-144fbo8{color:#25809a!important;}
+.css-144fbo8 {
+  color: #25809a !important;
+}
+/*facette filtre souligne*/
+.css-1gc10f1::after {
+  border-bottom: 2px solid rgb(37, 128, 154) !important;
+}
+/*case a cocher*/
+.css-1f1814e.Mui-checked,
+.css-1f1814e.MuiCheckbox-indeterminate {
+  color: #25809a !important;
+}
 /*Boite recherche + page notice*/
 /*tri, date et export texte + svg verts*/
-.css-124f0p3, .css-1082qr1 {color:#25809a!important;}
-.css-1ne2wwb:focus{border-color: #da1d64!important;}/* */
+.css-124f0p3,
+.css-1082qr1 {
+  color: #25809a !important;
+}
+.css-1ne2wwb:focus {
+  border-color: #da1d64 !important;
+}
+/* */
 /*notice*/
 /*button fond transparent de la fleche verte*/
-/*pose probleme avec l’image en bg du theme inist*/ 
+/*pose probleme avec l’image en bg du theme inist*/
 /*ces ajout ne fonctionnent pas*/
-/*.css-1yxmbwk{background-color: #fff!important;}
-.css-1yxmbwk:hover {background-color: rgba(0, 0, 0, 0.04)!important;}*/
+.css-1yxmbwk {
+  background-color: #fff !important;
+}
+.css-1yxmbwk:hover {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+}
