@@ -1,8 +1,8 @@
 # Lodex 12.55.2 theme INIST
 
-  Ce répertoire contient les fichiers à installer dans le répertoire custom de [LODEX](https://github.com/Inist-CNRS/lodex)'s theme inist,
+  Ce répertoire contient les fichiers à installer dans le répertoire custom de [LODEX](https://github.com/Inist-CNRS/lodex).
   
-  **usage est exclusivement réservé à l'institution inist-cnrs** lorsqu'elle publie ou livre ses services via lodex.
+  L'**usage de ce theme est exclusivement réservé à l'institution inist-cnrs** lorsqu'elle publie ou livre ses services via lodex.
 
 ```
 
@@ -38,7 +38,7 @@
 
 > **conseil pour page d'accueil**
 >
-> - titre h1 = titre résumé de l'étude repris dans breadcrumb
+> - titre h1 = titre court de l'étude repris dans breadcrumb
 > - titre h2 = titre long de l'étude
 
 #### Description du corpus
@@ -60,7 +60,7 @@
 
 ### 2. settings (ezmaster) / les différents menu
 
-> ***remarque*** *je vous ai mis un fichier settings_lodex_theme_Inist.json en exemple dans inist/*
+> ***remarque*** *je vous ai mis un fichier settings_lodex_theme_Inist.json en exemple dans theme inist/*
 
 ### breadcrumb
 
@@ -69,7 +69,7 @@
 > **Important** cet élément est stylé à l'identique du h1 dans [inist-styles.css](https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/css/inist-styles.css)
   
 
-  > **conseil**
+  > **conseil d'utilisation pour des accès rapides par liens externes**
   >
   > 1. ajouter contact : url du formulaire de l'équipe site inist.fr
   > 2. ajouter mentions légales : url mentions légales site inist.fr
@@ -78,7 +78,7 @@
 
 #### menu advanced
   
-  Des pages statiques sont à votre disposition dans le theme :
+  Des pages statiques sont à votre disposition dans le theme visible dans la demo du theme par le menu advanced :
 
     1. ajout possible de l'url interne pour la page  : methodologie\.html
     2. ajout possible de l'url interne pour la page  : contact\.html
@@ -96,11 +96,6 @@
   .bl3 {
   border-left: 3px solid #23aeff;
   padding-left: 30px;
-}
-.static-page h2::before {
-  content: "—";
-  padding-right: 20px;
-  font-weight: bold;
 }
 .bb {
   border-bottom: 1px solid rgba(170, 170, 170, 0.2);
@@ -148,10 +143,7 @@ div.resource .property_label {
 }
 /*toute page : annotation bt bb bl3*/
 .linked_fields {
-  border-top: 1px solid rgba(170, 170, 170, 0.2) !important;
-  border-left: 3px solid #23aeff !important;
-  border-bottom: 1px solid rgba(170, 170, 170, 0.2) !important;
-  padding-left: 30px !important;
+  border-left: none !important;
 }
 .linked_fields h2 {
   border-left: none;
@@ -179,7 +171,7 @@ div.resource .property_label {
   C'est pourquoi pour la version lodex 12.55.2, des feuilles de style spécifiques surchargent les composants non pris en compte et stylables par class css.
 
   > [css-loader.css](https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/css/css-loader.css)
-  > [styles_aphrodite.css](https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/css/styles_aphrodite.css=
+  > [styles_aphrodite.css](https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/css/styles_aphrodite.css)
 
   > ***remarque*** *ces fichiers ne doivent pas être modifier*
 
@@ -189,11 +181,11 @@ div.resource .property_label {
 
   1. le logo version blanche du [logo CNRS](https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/img/logo_cnrs_2019_blanc.svg]
   2. l'icone svg lien externe pour breacrumb (inséré via css) *** mettre à jour quand validation maquette ***
-  3. Deux familles d'images de fonds sont à votre disposition, repris du site inist\.fr mettre url
+  3. Deux images de fonds sont à votre disposition, repris du site inist\.fr ***mettre ur ?l***
     - [projets](https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/img/bg_projets.jpg)
     - [qui](https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/img/bg_qui.jpg)
 
-Pour ces dernières, les images 'projets' sont utilisées par défaut
+l'image 'projets' est utilisées par défaut
 
-Si vous souhaitez utiliser les fonds qui, voici comment faire :
+Si vous souhaitez utiliser l'image 'qui', voici comment faire :
 *** mettre à jour quand validation maquette *** 
