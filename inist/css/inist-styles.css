@@ -72,73 +72,102 @@ h2 {
 h3 {
   font-family: "Barlow Regular";
   font-size: 1rem;
-  color: #14134f;}
+  color: #14134f;
+}
 h4 {
   font-family: "Barlow Light";
   font-size: 1rem;
-  color: #14134f;}
+  color: #14134f;
+}
 /*titre :home, graph,resource titre champs, graphs titre*/
 div .property_label,
 .graph-results span.MuiCardHeader-title,
 div.resource .property_label {
   font-family: "Barlow Italic" !important;
   font-weight: inherit !important;
-  color: #14134f !important;}
+  color: #14134f !important;
+}
 /*resource titres champs*/
-div.resource .property_label {font-size: 1rem !important;}
+div.resource .property_label {
+  font-size: 1rem !important;
+}
 /*CHARTE inist*/
 /*fond header dans body*/
 body {
   background: url("../images/bg_projets.jpg") repeat-x;
-  opacity: 1;}
-header {background-color: transparent;}
+  opacity: 1;
+}
+header {
+  background-color: transparent;
+}
 /*text header bg fonce sur img bg body*/
-header > div > *, div.breadcrumb-root {
+header > div > *,
+div.breadcrumb-root {
   background-color: rgba(24, 20, 79, 0.6);
   box-shadow: 0px 0px 20px rgba(24, 20, 79, 1);
   border-radius: 10px;
 }
-header h1.bl3 {  border-radius: 0 10px 10px 0;}
+header h1.bl3 {
+  border-radius: 0 10px 10px 0;
+}
 /*header footer idem .container et style inist */
-header, footer {padding: 0 30px;}
-header > div, footer ul {margin: auto auto;}
+header,
+footer {
+  padding: 0 30px;
+}
+header > div,
+footer ul {
+  margin: auto auto;
+}
 .bl3 {
   border-left: 3px solid #00acb2;
-  padding-left: 30px;}
+  padding-left: 30px;
+}
 /*header positionnement, width et marges*/
 header > div {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   height: 8em;
-  justify-content: space-between;}
-header > div > * {margin: 1rem 0;}
+  justify-content: space-between;
+}
+header > div > * {
+  margin: 1rem 0;
+}
 header div#logos {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 315px;
-  min-width: 270px;}
+  min-width: 270px;
+}
 header a.logocnrs {
   height: 50px;
   -webkit-transform: translateX(-20px);
   -ms-transform: translateX(-20px);
-  transform: translateX(-20px);}
+  transform: translateX(-20px);
+}
 header a.logoinist {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;}
-header h1 {max-width: 750px;}/*titre optionnel*/
+  align-items: center;
+}
+header h1 {
+  max-width: 750px;
+} /*titre optionnel*/
 /*footer inist charte grille*/
 footer.bt {
-width: 100vw;
+  width: 100vw;
   margin-bottom: 90px;
   border-top: 1px solid rgba(170, 170, 170, 0.2);
-  background-color: #fff;}
-footer ul li.bl3 a {border-bottom: 1px solid rgba(95, 177, 225, 0.5);}
+  background-color: #fff;
+}
+footer ul li.bl3 a {
+  border-bottom: 1px solid rgba(95, 177, 225, 0.5);
+}
 footer ul.grille {
   background-image: linear-gradient(
     90deg,
@@ -147,8 +176,11 @@ footer ul.grille {
     transparent 99.8%
   );
   background-size: 33% 1px;
-  padding: 0;}
-footer ul.grille > * {width: 33%;}
+  padding: 0;
+}
+footer ul.grille > * {
+  width: 33%;
+}
 /*footer positionnement*/
 footer ul {
   display: -webkit-box;
@@ -184,7 +216,7 @@ nav img._1m2up2 {
 /*ELEMENTS LODEX*/
 /* container */
 #root.container {
-  min-height: 55vh;/*full screen*/
+  min-height: 55vh; /*full screen*/
   padding: 0 2%;
   background-color: #fbfbfb;
   margin-bottom: 1em;
@@ -259,15 +291,16 @@ div.breadcrumb-root a:hover, div.breadcrumb-root a:focus, div.breadcrumb-root a:
   footer ul > * {
     width: 100%;
   }
-div.breadcrumb-root {
-  float: none;
-  margin-top: 0;
-  background-color: #14134f;
-  box-shadow: none;
-  border-radius: 0;
-  position: absolute;
-  width: 100%;
-  left: 0;
+  div.breadcrumb-root {
+    float: none;
+    margin-top: 0;
+    background-color: #14134f;
+    box-shadow: none;
+    border-radius: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
 }
 /* adaptative charte : header et footer idem container (cf custom/styles.css)*/
 @media (min-width: 576px) {
