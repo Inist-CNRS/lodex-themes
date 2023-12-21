@@ -13,7 +13,7 @@ L'**usage de ce theme est exclusivement réservé à l'institution inist-cnrs** 
 │       └── fonts
 │            └── Barlow
 │            └── Gentium_Basic
-│   └── images
+│   └── img
 │  methodologie.html
 │  settings_lodex_theme_Inist.json
 │  README.md

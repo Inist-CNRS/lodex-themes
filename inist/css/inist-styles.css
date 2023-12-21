@@ -93,7 +93,7 @@ body {
     }
     /*TITRE l'instance*/
     div.dataset-characteristics > div > div.format_title:nth-child(2) {
-        margin: -10rem 1rem 0;
+        margin: -10rem auto 0;
         background-color: white;
         border: 1px dotted rgb(224, 224, 224);
         border-bottom: white;
@@ -142,7 +142,7 @@ body {
     }
     /*TITRE l'instance*/
     div.dataset-characteristics > div > div.format_title:nth-child(2) {
-        margin: -6rem 1rem 0;
+        margin: -6rem auto 0;
         padding: 1.5rem;
     }
     /* position titre pour home*/
