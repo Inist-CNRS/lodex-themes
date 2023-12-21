@@ -33,34 +33,33 @@ L'**usage de ce theme est exclusivement réservé à l'institution inist-cnrs** 
 
 #### Titre de l'étude
 
-- renseigné via Admin/Affichage/Page d'accueil/page/
-- création d'un nouveau champ :
-  Onglet Général / valeur arbitraire / saisie du titre
-  Onglet Affichage / visible format texte/titre/h1
+-   renseigné via Admin/Affichage/Page d'accueil/page/
+-   création d'un nouveau champ :
+    Onglet Général / valeur arbitraire / saisie du titre
+    Onglet Affichage / visible format texte/titre/h1
 
-> **Attention** ne pas indiquer de largeur !
-
-> **conseil pour page d'accueil**
->
-> - titre h1 = titre court de l'étude repris dans breadcrumb
-> - titre h2 = titre long de l'étude
+> **Attention**
+> titre h1 = titre de l'étude sera bien visible en lui insérant une largeur maxi de 70% et minimun de 50%
+> la css prévoit une mise en exergue du titre en page d'accueil sous la forme d'un décrochement
+> **-remarque-**
+> ajouter capture
 
 #### Description du corpus
 
-- renseigné via Admin/Affichage/Page d'accueil/page/
-- création d'un nouveau champ :
-  Onglet Général / valeur arbitraire / saisie du titre
-  Onglet Affichage / visible format texte/paragraphe
+-   renseigné via Admin/Affichage/Page d'accueil/page/
+-   création d'un nouveau champ :
+    Onglet Général / valeur arbitraire / saisie du titre
+    Onglet Affichage / visible format texte/paragraphe
 
 #### meta balise head/title
 
-- renseignée via Admin/Affichage/Page d'accueil/page/DATASET - Titre
-- -> sélectionner champs titre créé pour Page d'accueil
+-   renseignée via Admin/Affichage/Page d'accueil/page/DATASET - Titre
+-   -> sélectionner champs titre créé pour Page d'accueil
 
 #### meta balise head/description
 
-- renseignée via Admin/Affichage/Page d'accueil/page/DATASET - Description
-- -> sélectionner champ description crée pour page d'accueil
+-   renseignée via Admin/Affichage/Page d'accueil/page/DATASET - Description
+-   -> sélectionner champ description crée pour page d'accueil
 
 ### 2. settings (ezmaster) / les différents menu
 
@@ -68,14 +67,7 @@ L'**usage de ce theme est exclusivement réservé à l'institution inist-cnrs** 
 
 ### breadcrumb
 
-doit contenir au minimum le titre court de l'étude, texte identique au h1 indiqué ci-dessus
-
-> **Important** cet élément est stylé à l'identique du h1 dans [inist-styles.css](https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/css/inist-styles.css)
-
-> **conseil d'utilisation pour des accès rapides par liens externes**
->
-> 1. ajouter contact : url du formulaire de l'équipe site inist.fr
-> 2. ajouter mentions légales : url mentions légales site inist.fr
+le premier lien dans les settings reprend le titre (court) de l'étude et permet un retour à la page d'accueil en haut de page
 
 La css prévoit l'ajout d'une icône 'lien externe' pour les urls hors de l'instance lodex
 
@@ -85,15 +77,17 @@ la page statique methodologie.html est à votre disposition dans le theme.
 
 Pour une bonne mise en oeuvre de la charte inist lodex, il faut conserver la structure :
 
+```bash
 <div class="static-page">
 <h1 class="bl3">
 <section>
+```
 
-- section contient h2
-- section peut être multiple
-- section peut contenir div, h3, ...
+-   section contient h2
+-   section peut être multiple
+-   section peut contenir div, h3, ...
 
-  > **remarque** cette page est votre modèle pour les pages statiques
+> **remarque** cette page est votre modèle pour les pages statiques
 
 ## 3. Charte inist et Lodex
 
@@ -172,7 +166,7 @@ div.resource .property_label {
 
 ### custom/ colorTheme.js et customTheme.js
 
-**Nouveauté lodex 12.55** : pour votre information, colorsTheme.js permet de déclarer les couleurs icônes et textes du lodex
+**Nouveauté lodex 12.55** : pour votre information, colorsTheme.js permet de déclarer les couleurs des icônes et textes du lodex
 
 > https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/colorsTheme.js
 
@@ -188,13 +182,5 @@ C'est pourquoi pour la version lodex 12.55.2, des feuilles de style spécifiques
 Ce répertoire contient :
 
 1. le logo version blanche du [logo CNRS](https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/img/logo_cnrs_2019_blanc.svg]
-2. l'icone svg lien externe pour breacrumb (inséré via css) **_ mettre à jour quand validation maquette _**
-3. Deux images de fonds sont à votre disposition, repris du site inist\.fr **_mettre ur ?l_**
-
-   - [projets](https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/img/bg_projets.jpg)
-   - [qui](https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/img/bg_qui.jpg)
-
-l'image 'projets' est utilisées par défaut
-
-Si vous souhaitez utiliser l'image 'qui', voici comment faire :
-**_ mettre à jour quand validation maquette _**
+2. l'icone svg lien externe pour breacrumb (inséré via css)
+3. images de fonds pour header et nav, repris du site inist\. (inséré via css)
