@@ -54,46 +54,40 @@ body {
     .container-fluid {
         width: 95% !important;
     }
-    /*titre court*/
-    div.breadcrumb-root {
-        position: absolute;
-        top: 2rem;
-    }
+    /*breadcrumb liens externes et titre court*/
     div.breadcrumb-root {
         width: 95%;
+        margin: -5rem auto 0;
     }
-    div.breadcrumb-trail {
-        align-items: flex-end !important;
-    }
+    /*titre court position*/
     div.breadcrumb-trail a[href="/"]:last-child {
-        margin: 1rem 1.6rem -2rem auto;
+        width: max-content;
+        max-width: 70%;
+        margin: 1.5rem auto 0 2.5rem;
     }
 }
 @media only screen and (min-width: 481px) and (max-width: 793.9px) {
     body {
         background-size: 100%;
     }
+    header.container {
+        width: 95%;
+    }
     h1 {
         font-size: 1.5rem;
     }
     div.breadcrumb-root {
-        position: relative;
-        margin-bottom: -2rem;
-        padding: 0 1.6rem;
+        margin: -5rem auto 0;
     }
-    /*pour links breadcrumb*/
-    div.breadcrumb-trail {
-        text-align: center;
-        width: 100%;
-        margin: 0 auto;
-    }
-    /* bloc titre  */
-    div.breadcrumb-trail {
-        align-items: center !important;
+    /*titre court position*/
+    div.breadcrumb-trail a[href="/"]:last-child {
+        width: max-content;
+        max-width: 70%;
+        margin: 1.5rem auto 0 5rem;
     }
     /*TITRE l'instance*/
     div.dataset-characteristics > div > div.format_title:nth-child(2) {
-        margin: -10rem auto 0;
+        margin: -10rem 1rem 0;
         background-color: white;
         border: 1px dotted rgb(224, 224, 224);
         border-bottom: white;
@@ -118,34 +112,26 @@ body {
     header #logos {
         margin: 0 auto;
     }
+    /* titre court position*/
+    div.breadcrumb-root {
+        margin: -1.5rem auto 0;
+        padding: 0 1.6rem;
+    }
     /* pas de links*/
     div.breadcrumb-trail a[href^="http"] {
         display: none;
     }
-    /* bloc titres*/
-    div.breadcrumb-root {
-        background-color: transparent;
-        position: relative;
-    }
-    div.breadcrumb-root {
-        margin-bottom: -2rem;
-        padding: 0 1.6rem;
-    }
-    div.breadcrumb-trail {
-        align-items: center;
-    }
     div.breadcrumb-trail a[href="/"]:last-child {
-        flex-grow: 0;
+        margin: 0 auto;
     }
     footer ul {
         flex-direction: column;
     }
-    /*TITRE l'instance*/
+    /*position TITRE l'instance*/
     div.dataset-characteristics > div > div.format_title:nth-child(2) {
-        margin: -6rem auto 0;
+        margin: -6rem 1rem 0;
         padding: 1.5rem;
     }
-    /* position titre pour home*/
     .header-dataset-section {
         margin-top: 5rem;
     }
@@ -325,6 +311,7 @@ footer li#lodex::before {
 div.breadcrumb-root {
     max-width: 1248px;
     background-color: transparent;
+    position: relative;
 }
 div.breadcrumb-root > svg,
 div.breadcrumb-root span {
@@ -332,8 +319,8 @@ div.breadcrumb-root span {
 }
 div.breadcrumb-trail {
     width: 100% !important;
-    display: flex;
-    flex-direction: column;
+    height: 60px;
+    text-align: right;
 }
 div.breadcrumb-trail a[href^="http"]._66fo0a {
     color: white !important;
@@ -371,15 +358,16 @@ div.breadcrumb-trail a[href^="http"]::after {
 footer li a[href^="http"]::after {
     background-image: url("../img/external-link-alt_gris.svg");
 }
-/* titre court*/
+/* titre court box*/
 div.breadcrumb-trail a[href="/"]:last-child {
     display: flex;
     border: 1px dotted rgb(224, 224, 224);
     border-bottom: white;
     background: white;
     justify-content: center;
-    padding: 1.5rem;
+    padding: 1rem;
 }
+/*titre court texte*/
 div.breadcrumb-trail a[href="/"]:last-child {
     text-align: center;
     color: rgb(43, 131, 186) !important;
@@ -387,12 +375,11 @@ div.breadcrumb-trail a[href="/"]:last-child {
     font-size: 1.2rem;
     font-weight: normal;
 }
-/*titre clicable*/
+/*titre court clicable*/
 div.breadcrumb-trail a[href="/"]:last-child:hover,
 div.breadcrumb-trail a[href="/"]:last-child:focus,
 div.breadcrumb-trail a[href="/"]:last-child:active {
-    text-decoration: none;
-    color: #b22f90 !important;
+    text-decoration: underline 2px rgb(35, 174, 255);
 }
 
 /*ELEMENTS lodex - texte */
@@ -504,6 +491,7 @@ nav img._1m2up2 {
 .body .graph-container {
     padding-top: 3rem;
     padding-bottom: 1rem;
+    margin: 30px auto;
 }
 /*static-page reprend prop page home*/
 .static-page {
@@ -511,6 +499,7 @@ nav img._1m2up2 {
     flex-flow: column wrap;
     padding-top: 2rem;
     padding-bottom: 1rem;
+    margin: 30px auto;
 }
 .static-page p {
     margin-left: 2rem;
@@ -556,7 +545,6 @@ a.VoirPlus:hover,
 a.VoirPlus:focus {
     box-shadow: 0px 0px 0px 1px #23aeff;
 }
-
 /*element lodex reprise css bibliolodex*/
 .dialog-button,
 .export svg,
@@ -575,13 +563,11 @@ a.VoirPlus:focus {
 .display-in-graph div svg:last-of-type {
     fill: #25809a !important;
 }
-
 .browse-result button,
 .create-resource button,
 .configure-field button {
     background-color: #25809a !important;
 }
-
 /*CircularProgress,*/
 .fa-spinner,
 .fa-spin {

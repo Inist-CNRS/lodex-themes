@@ -65,13 +65,24 @@ L'**usage de ce theme est exclusivement réservé à l'institution inist-cnrs** 
 
 > **_remarque_** _je vous ai mis un fichier settings_lodex_theme_Inist.json en exemple dans theme inist/_
 
-### breadcrumb
+### [breadcrumb]
 
-le premier lien dans les settings reprend le titre (court) de l'étude et permet un retour à la page d'accueil en haut de page
+#### titre (court) de l'étude
 
-La css prévoit l'ajout d'une icône 'lien externe' pour les urls hors de l'instance lodex
+le dernier lien dans les settings reprend le titre (court) de l'étude.
 
-#### menu advanced
+-   comme toujours, il permet un retour à la page d'accueil en haut de page
+-   il fait office de titre courant pour toutes les pages du site
+
+#### autres liens du breadcrumb
+
+Comme son nom ne l'indique pas, le breadcrumb permet d'ajouter des liens internes ou externe dans l'instance courante.
+
+Pour le theme inist, ces liens sont designés comme un menu haut contenant des liens externes connexes au site courant
+
+La css prévoit l'ajout d'une icône 'lien externe' pour les urls pointant hors de l'instance lodex
+
+### menu advanced
 
 la page statique methodologie.html est à votre disposition dans le theme.
 
