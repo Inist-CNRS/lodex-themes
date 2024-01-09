@@ -1,10 +1,10 @@
-# Lodex 12.55.2 theme INIST
+# Lodex 12.55.5 theme INIST
 
-Ce répertoire contient les fichiers à installer dans le répertoire custom de [LODEX](https://github.com/Inist-CNRS/lodex).
+Ce répertoire contient les fichiers à installer dans le répertoire custom de [LODEX](https://github.com/Inist-CNRS/lodex/releases/tag/v12.55.5).
 
 L'**usage de ce theme est exclusivement réservé à l'institution inist-cnrs** lorsqu'elle publie ou livre ses services via lodex.
 
-#### répertoires et fihiers spécifiques du theme
+#### répertoires et fichiers ajoutés au theme par défaut
 
 ```
 
@@ -24,7 +24,7 @@ L'**usage de ce theme est exclusivement réservé à l'institution inist-cnrs** 
 
     Cette documentation est à l'usage de :
 
-    1. la maintenance de ce theme préparé pour la version 12.55.2 de Lodex
+    1. la maintenance de ce theme préparé pour la version 12.55.x de Lodex
     2. la réalisation par les créateurs d'instance lodex pour le compte de l'inist-cnrs
 
 ## Optimisation de l'utilisation lodex theme inist
@@ -33,14 +33,18 @@ L'**usage de ce theme est exclusivement réservé à l'institution inist-cnrs** 
 
 #### Titre de l'étude
 
--   renseigné via Admin/Affichage/Page d'accueil/page/
--   création d'un nouveau champ :
+doit être dans une balise html de titre niveau 1 -> h1
+comment faire ?
+
+-   se rendre dans Admin/Affichage/Page d'accueil/page/
+-   sélectionner 'création d'un nouveau champ' puis
     Onglet Général / valeur arbitraire / saisie du titre
     Onglet Affichage / visible format texte/titre/h1
 
 > **Attention**
-> titre h1 = titre de l'étude sera bien visible en lui insérant une largeur maxi de 70% et minimun de 50%
+> titre h1 = titre de l'étude sera bien visible en lui insérant une largeur maxi de 70% et minimun de 50% (à définir dans onglet affichage)
 > la css prévoit une mise en exergue du titre en page d'accueil sous la forme d'un décrochement
+>
 > **-remarque-**
 > ajouter capture
 
@@ -54,37 +58,56 @@ L'**usage de ce theme est exclusivement réservé à l'institution inist-cnrs** 
 #### meta balise head/title
 
 -   renseignée via Admin/Affichage/Page d'accueil/page/DATASET - Titre
--   -> sélectionner champs titre créé pour Page d'accueil
+-   Idée ! -> sélectionner champs titre créé pour Page d'accueil
 
 #### meta balise head/description
 
 -   renseignée via Admin/Affichage/Page d'accueil/page/DATASET - Description
--   -> sélectionner champ description crée pour page d'accueil
+-   Idée ! -> sélectionner champ description crée pour page d'accueil
 
-### 2. settings (ezmaster) / les différents menu
+### 2. settings (ezmaster pour lodex v12.55.2) / les différents menu
 
 > **_remarque_** _je vous ai mis un fichier settings_lodex_theme_Inist.json en exemple dans theme inist/_
 
 ### [breadcrumb]
 
+Comme son nom ne l'indique pas, le breadcrumb permet d'ajouter des liens internes ou externe dans l'instance courante.
+
 #### titre (court) de l'étude
 
-le dernier lien dans les settings reprend le titre (court) de l'étude.
+Le dernier lien dans les settings reprend le titre (court) de l'étude.
 
 -   comme toujours, il permet un retour à la page d'accueil en haut de page
 -   il fait office de titre courant pour toutes les pages du site
 
 #### autres liens du breadcrumb
 
-Comme son nom ne l'indique pas, le breadcrumb permet d'ajouter des liens internes ou externe dans l'instance courante.
-
 Pour le theme inist, ces liens sont designés comme un menu haut contenant des liens externes connexes au site courant
 
 La css prévoit l'ajout d'une icône 'lien externe' pour les urls pointant hors de l'instance lodex
 
-### menu advanced
+### [menu] "position": "advanced"
 
-la page statique methodologie.html est à votre disposition dans le theme.
+```bash
+      "menu": [
+        {
+          "label": {
+            "en": "Methodo",
+            "fr": "Méthodologie"
+          },
+          "icon": "faBookReader",
+          "position": "advanced",
+          "role": "custom",
+          "link": "/methodologie.html"
+        }(...)
+      ]
+```
+
+### 3. Pages statiques
+
+Une page statique 'methodologie.html' est à votre disposition dans le theme.
+
+> **remarque** cette page est votre modèle pour les pages statiques
 
 Pour une bonne mise en oeuvre de la charte inist lodex, il faut conserver la structure :
 
@@ -98,11 +121,9 @@ Pour une bonne mise en oeuvre de la charte inist lodex, il faut conserver la str
 -   section peut être multiple
 -   section peut contenir div, h3, ...
 
-> **remarque** cette page est votre modèle pour les pages statiques
+## 4. Charte inist et style css Lodex
 
-## 3. Charte inist et Lodex
-
-### Des class css sont disponibles dans inist-style.css
+### Des class css charte Inist sont disponibles dans css/inist-style.css
 
 > **_remarque_** _vous pouvez utiliser ces class lorsque vous créer des éléments html depuis l'admin_
 
@@ -173,20 +194,28 @@ div.resource .property_label {
 }
 ```
 
-## custom : description et usage des autres fichiers
+## 5. custom : description et usage des autres fichiers
 
 ### custom/ colorTheme.js et customTheme.js
 
 **Nouveauté lodex 12.55** : pour votre information, colorsTheme.js permet de déclarer les couleurs des icônes et textes du lodex
 
-> https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/colorsTheme.js
-
 Mais le code de Lodex ne prend en compte ce fichier de déclaration couleur que pour certains de ses composants.
-C'est pourquoi pour la version lodex 12.55.2, des feuilles de style spécifiques surchargent les composants non pris en compte et stylables par class css.
 
-> [css-loader.css](https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/css/css-loader.css) > [styles_aphrodite.css](https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/css/styles_aphrodite.css)
+### custom/css/
+
+Pour la version lodex 12.55.x, des feuilles de style spécifiques surchargent les composants non pris en compte via colorTheme.js.
+
+> custom/css/css-loader.css
+> custom/css/styles_aphrodite.css
 
 > **_remarque_** _ces fichiers ne doivent pas être modifier_
+
+### custom/css/fonts/
+
+-   contient les fonts utilisées par la charte inist
+-   les déclarations d'utilisation des fonts sont paramétrées dans
+    custom/css/fonts-style.css
 
 ### custom/img
 
