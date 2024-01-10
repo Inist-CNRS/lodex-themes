@@ -2,7 +2,13 @@
 
   L'**usage de ce theme est exclusivement réservé à l'institution CNRS Inist**.
 
-  Ce répertoire contient les fichiers à installer dans le répertoire custom de [LODEX v12.55.x](https://github.com/Inist-CNRS/lodex/releases/tag/v12.55.5).
+  Ce répertoire contient les fichiers à installer dans le répertoire custom de  
+  [LODEX v12.55.x](https://github.com/Inist-CNRS/lodex/releases/tag/v12.55.5).
+  
+  Cette documentation est à l'usage de :   
+    1. la maintenance de ce theme préparé pour la version 12.55.x de Lodex
+    2. la réalisation par les créateurs d'instance lodex pour le compte de l'inist-cnrs
+
 
 #### répertoires et fichiers spécifiques theme CNRS Inist
 
@@ -37,10 +43,6 @@
 │  site.webmanifest
 
 ```
-    Cette documentation est à l'usage de :
-
-    1. la maintenance de ce theme préparé pour la version 12.55.x de Lodex
-    2. la réalisation par les créateurs d'instance lodex pour le compte de l'inist-cnrs
 
 ## Optimisation de l'utilisation lodex theme CNRS Inist
 
