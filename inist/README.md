@@ -1,11 +1,10 @@
-# Lodex 12.55.5 theme INIST
+# Lodex 12.55.5 theme CNRS Inist
 
-Ce répertoire contient les fichiers à installer dans le répertoire custom de [LODEX](https://github.com/Inist-CNRS/lodex/releases/tag/v12.55.5).
+L'**usage de ce theme est exclusivement réservé à l'institution CNRS Inist**.
 
-L'**usage de ce theme est exclusivement réservé à l'institution inist-cnrs** lorsqu'elle publie ou livre ses services via lodex.
+Ce répertoire contient les fichiers à installer dans le répertoire custom de [LODEX v12.55.x](https://github.com/Inist-CNRS/lodex/releases/tag/v12.55.5).
 
-#### répertoires et fichiers ajoutés au theme par défaut
-
+#### répertoires et fichiers spécifiques theme CNRS Inist
 ```
 
 ├── inist
@@ -15,19 +14,34 @@ L'**usage de ce theme est exclusivement réservé à l'institution inist-cnrs** 
 │            └── Gentium_Basic
 │   └── img
 │  methodologie.html
+│  
 │  settings_lodex_theme_Inist.json
 │  README.md
 
 ```
 
-## Documentation du theme Inist
+>    à noter : installation de l'ensemble des favicons nouveau logo lodex 2023
 
+```
+
+│  android-chrome-192x192.png
+│  android-chrome-512x512.png
+│  apple-touch-icon.png
+│  browserconfig.xml
+│  favicon-16x16.png
+│  favicon-32x32.png
+│  favicon.ico
+│  mstile-150x150.png
+│  safari-pinned-tab.svg
+│  site.webmanifest
+
+```
     Cette documentation est à l'usage de :
 
     1. la maintenance de ce theme préparé pour la version 12.55.x de Lodex
     2. la réalisation par les créateurs d'instance lodex pour le compte de l'inist-cnrs
 
-## Optimisation de l'utilisation lodex theme inist
+## Optimisation de l'utilisation lodex theme CNRS Inist
 
 ### 1. Elements créés depuis l'admin et utilisés par lodex et/ou stylés par css
 
@@ -111,37 +125,38 @@ Une page statique 'methodologie.html' est à votre disposition dans le theme.
 
 Pour une bonne mise en oeuvre de la charte inist lodex, il faut conserver la structure :
 
-```bash
+`
 <div class="static-page">
-<h1 class="bl3">
-<section>
-```
+    <h1 class="bl3">
+    <section>
+        (...)
+`
 
 -   section contient h2
 -   section peut être multiple
 -   section peut contenir div, h3, ...
 
-## 4. Charte inist et style css Lodex
+## 4. Charte CNRS Inist et style css Lodex
 
-### Des class css charte Inist sont disponibles dans css/inist-style.css
+### Des class css charte CNRS Inist sont disponibles dans css/inist-style.css
 
 > **_remarque_** _vous pouvez utiliser ces class lorsque vous créer des éléments html depuis l'admin_
 
-```bash
-  .bl3 {
-  border-left: 3px solid #23aeff;
-  padding-left: 30px;
-}
+`
+.bl3 {
+    border-left: 3px solid #23aeff;
+      padding-left: 30px;
+    }
 .bb {
-  border-bottom: 1px solid rgba(170, 170, 170, 0.2);
-}
+    border-bottom: 1px solid rgba(170, 170, 170, 0.2);
+    }
 .bt {
-  border-top: 1px solid rgba(170, 170, 170, 0.2);
-}
+    border-top: 1px solid rgba(170, 170, 170, 0.2);
+    }
 /*fond rose*/
 .bg {
   background-color: rgba(229, 229, 229, 0.17);
-}
+    }
 /*a "voir plus" charte inist*/
 a.VoirPlus {
   color: #434148;
@@ -158,13 +173,13 @@ a.VoirPlus:hover,
 a.VoirPlus:focus {
   box-shadow: 0px 0px 0px 1px #23aeff;
 }
-```
+`
 
 ### Des éléments lodex sont stylés selon charte INIST :
 
 > **_remarque_** _ceci n'est qu'une proposition et peut-être modifié_
 
-```bash
+`
 /*page accueil : label avec un tiret*/
 .header-dataset-section div .property_label::before {
   content: "—";
@@ -192,7 +207,7 @@ div.resource .property_label {
 .resources-grid-list {
   background-color: rgba(229, 229, 229, 0.17);
 }
-```
+`
 
 ## 5. custom : description et usage des autres fichiers
 
@@ -206,8 +221,8 @@ Mais le code de Lodex ne prend en compte ce fichier de déclaration couleur que 
 
 Pour la version lodex 12.55.x, des feuilles de style spécifiques surchargent les composants non pris en compte via colorTheme.js.
 
-> custom/css/css-loader.css
-> custom/css/styles_aphrodite.css
+- custom/css/css-loader.css
+- custom/css/styles_aphrodite.css
 
 > **_remarque_** _ces fichiers ne doivent pas être modifier_
 
@@ -221,6 +236,7 @@ Pour la version lodex 12.55.x, des feuilles de style spécifiques surchargent le
 
 Ce répertoire contient :
 
-1. le logo version blanche du [logo CNRS](https://github.com/Inist-CNRS/lodex-themes/blob/master/inist/img/logo_cnrs_2019_blanc.svg]
-2. l'icone svg lien externe pour breacrumb (inséré via css)
-3. images de fonds pour header et nav, repris du site inist\. (inséré via css)
+1. logo version blanche du logo CNRS
+2. images de fonds pour header et nav, repris du site CNRS Inist
+3. icone svg lien externe pour breacrumb
+4. icone fontawesom home.svg pour le titre courant
