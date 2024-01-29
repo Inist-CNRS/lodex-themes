@@ -1,3 +1,6 @@
+
+**Warning: themes are now included in the main repository. see https://github.com/Inist-CNRS/lodex/tree/master/src/themes**
+
 # Lodex themes
 
 This repository contains [LODEX](https://github.com/Inist-CNRS/lodex)'s themes,
